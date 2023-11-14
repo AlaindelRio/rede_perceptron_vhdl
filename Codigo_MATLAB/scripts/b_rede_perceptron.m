@@ -1,5 +1,5 @@
 %% Perceptron para a identificacion de díxitos numéricos
-% Carga de datos no Worksstpace
+% Sección 1. Carga de datos no Worksstpace
 % Ruta base relativa a la carpeta 'data'
 basePath = '../data/';
 
@@ -15,7 +15,7 @@ load(fullfile(basePath, 'YTest.mat'));
 % Normalización dos datos
 XTrain_norm = XTrain/255;
 XTest_norm  = XTest/255;
-%% Adestramento dos Perceptrons
+%% Sección 2. Adestramento dos Perceptrons
 rede = perceptron;
 rede.trainParam.epochs = 10;
 rede = train(rede, XTrain, YTrain);
@@ -23,7 +23,7 @@ rede = train(rede, XTrain, YTrain);
 rede_n = perceptron;
 rede_n.trainParam.epochs = 10;
 rede_n = train(rede, XTrain_norm, YTrain);
-%% Prediccións do modelo entrenado
+%% Sección 3. Prediccións do modelo entrenado
 % Modelo adestrado con datos sin normalizados
 [accuracy_rede] = calc_accuracy(XTest,YTest,rede);   
 
@@ -32,7 +32,7 @@ rede_n = train(rede, XTrain_norm, YTrain);
 
 fprintf('Precisión do modelo sen normalizar: %.2f%%\n', accuracy_rede);
 fprintf('Precisión do modelo normalizado: %.2f%%\n', accuracy_rede_n);
-%% Obtencion da Matriz de confusión e número de mostras por etiqueta
+%% Sección 4. Obtencion da Matriz de confusión e número de mostras por etiqueta
 YPred = rede_n(XTest);
 [~, predictedLabels] = max(YPred);
 [~, trueLabels] = max(YTest);
@@ -49,7 +49,7 @@ xlabel('Etiqueta');
 ylabel('Número de muestras');
 title('Distribución de etiquetas');
 
-%% Cálculo dos pesos das conexións
+%% Sección 5. Cálculo dos pesos das conexións
 % Número de bits necesarios pra represetar o valor dos pesos
 pesos_rede = rede.IW{1};
 pesos_bias = rede.b{1};
@@ -73,7 +73,7 @@ pesos_rede = pesos_rede';
 pesos_rede = sfi(pesos_rede,n_pesos,0);
 pesos_bias = sfi(pesos_bias,n_pesos,0);
 
-%% Xeneración do arquivo COE pra implementar a memoria de pesos
+%% Sección 6. Xeneración do arquivo COE pra implementar a memoria de pesos
 % Número de pixeles
 dim = size(pesos_rede,1) + 1; % Dimensión dos pesos máis o valor de bias
 
