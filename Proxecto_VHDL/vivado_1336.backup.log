@@ -1,0 +1,308 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Oct 31 08:48:04 2023
+# Process ID: 1336
+# Current directory: C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15864 C:\Users\Alain\OneDrive - Universidade da Coruña\Apuntes EEIeA\TFG\Proxecto\Vivado\Rede_Perceptron_UART\Rede_Perceptron_UART.xpr
+# Log file: C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/vivado.log
+# Journal file: C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART\vivado.jou
+# Running On: Medion, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 6, Host memory: 17026 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project {C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART'
+INFO: [Project 1-313] Project file moved from 'C:/Users/Alain/Desktop/TFG_VF/Vivado/Rede_Perceptron_UART' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/TFG/Vivado/Rede_Perceptron/Pesos/Memw0.COE', nor could it be found using path 'C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Pesos/Memw0.COE'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw4.COE', nor could it be found using path 'C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw4.COE'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw2.COE', nor could it be found using path 'C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw2.COE'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw1.COE', nor could it be found using path 'C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw1.COE'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw8.COE', nor could it be found using path 'C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw8.COE'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw9.COE', nor could it be found using path 'C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw9.COE'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw7.COE', nor could it be found using path 'C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw7.COE'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw5.COE', nor could it be found using path 'C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw5.COE'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw3.COE', nor could it be found using path 'C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw3.COE'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw6.COE', nor could it be found using path 'C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw6.COE'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [Project 1-230] Project 'Rede_Perceptron_UART.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1457.586 ; gain = 135.957
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip -srcset Contador_ADDR [get_ips  {Contador_ADDR Mem_ROM_0 Mem_ROM_1 Mem_ROM_2 Mem_ROM_3 Mem_ROM_4 Mem_ROM_5 Mem_ROM_6 Mem_ROM_7 Mem_ROM_8 Mem_ROM_9 Sumador}] -log ip_upgrade.log
+Upgrading 'Contador_ADDR'
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Contador_ADDR/Contador_ADDR.xci' from fileset 'Contador_ADDR' to fileset 'sources_1'.
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Contador_ADDR.xcix' from fileset 'Contador_ADDR' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded Contador_ADDR (Binary Counter 12.0) from revision 15 to revision 17
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Contador_ADDR'...
+Upgrading 'Mem_ROM_0'
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_0/Mem_ROM_0.xci' from fileset 'Mem_ROM_0' to fileset 'sources_1'.
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_0.xcix' from fileset 'Mem_ROM_0' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded Mem_ROM_0 (Block Memory Generator 8.4) from revision 5 to revision 7
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Mem_ROM_0'...
+Upgrading 'Mem_ROM_1'
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_1/Mem_ROM_1.xci' from fileset 'Mem_ROM_1' to fileset 'sources_1'.
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_1.xcix' from fileset 'Mem_ROM_1' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded Mem_ROM_1 (Block Memory Generator 8.4) from revision 5 to revision 7
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Mem_ROM_1'...
+Upgrading 'Mem_ROM_2'
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_2/Mem_ROM_2.xci' from fileset 'Mem_ROM_2' to fileset 'sources_1'.
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_2.xcix' from fileset 'Mem_ROM_2' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded Mem_ROM_2 (Block Memory Generator 8.4) from revision 5 to revision 7
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Mem_ROM_2'...
+Upgrading 'Mem_ROM_3'
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_3/Mem_ROM_3.xci' from fileset 'Mem_ROM_3' to fileset 'sources_1'.
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_3.xcix' from fileset 'Mem_ROM_3' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded Mem_ROM_3 (Block Memory Generator 8.4) from revision 5 to revision 7
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Mem_ROM_3'...
+Upgrading 'Mem_ROM_4'
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_4/Mem_ROM_4.xci' from fileset 'Mem_ROM_4' to fileset 'sources_1'.
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_4.xcix' from fileset 'Mem_ROM_4' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded Mem_ROM_4 (Block Memory Generator 8.4) from revision 5 to revision 7
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Mem_ROM_4'...
+Upgrading 'Mem_ROM_5'
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_5/Mem_ROM_5.xci' from fileset 'Mem_ROM_5' to fileset 'sources_1'.
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_5.xcix' from fileset 'Mem_ROM_5' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded Mem_ROM_5 (Block Memory Generator 8.4) from revision 5 to revision 7
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Mem_ROM_5'...
+Upgrading 'Mem_ROM_6'
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_6/Mem_ROM_6.xci' from fileset 'Mem_ROM_6' to fileset 'sources_1'.
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_6.xcix' from fileset 'Mem_ROM_6' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded Mem_ROM_6 (Block Memory Generator 8.4) from revision 5 to revision 7
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Mem_ROM_6'...
+Upgrading 'Mem_ROM_7'
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_7/Mem_ROM_7.xci' from fileset 'Mem_ROM_7' to fileset 'sources_1'.
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_7.xcix' from fileset 'Mem_ROM_7' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded Mem_ROM_7 (Block Memory Generator 8.4) from revision 5 to revision 7
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Mem_ROM_7'...
+Upgrading 'Mem_ROM_8'
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_8/Mem_ROM_8.xci' from fileset 'Mem_ROM_8' to fileset 'sources_1'.
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_8.xcix' from fileset 'Mem_ROM_8' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded Mem_ROM_8 (Block Memory Generator 8.4) from revision 5 to revision 7
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Mem_ROM_8'...
+Upgrading 'Mem_ROM_9'
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_9/Mem_ROM_9.xci' from fileset 'Mem_ROM_9' to fileset 'sources_1'.
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_9.xcix' from fileset 'Mem_ROM_9' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded Mem_ROM_9 (Block Memory Generator 8.4) from revision 5 to revision 7
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Mem_ROM_9'...
+Upgrading 'Sumador'
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Sumador/Sumador.xci' from fileset 'Sumador' to fileset 'sources_1'.
+INFO: [Project 1-386] Moving file 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Sumador.xcix' from fileset 'Sumador' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded Sumador (Adder/Subtracter 12.0) from revision 14 to revision 16
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Sumador'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:10 ; elapsed = 00:00:47 . Memory (MB): peak = 1533.184 ; gain = 23.211
+export_ip_user_files -of_objects [get_ips {Contador_ADDR Mem_ROM_0 Mem_ROM_1 Mem_ROM_2 Mem_ROM_3 Mem_ROM_4 Mem_ROM_5 Mem_ROM_6 Mem_ROM_7 Mem_ROM_8 Mem_ROM_9 Sumador}] -no_script -sync -force -quiet
+generate_target all [get_files {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_9/Mem_ROM_9.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Mem_ROM_9'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Mem_ROM_9'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Mem_ROM_9'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Mem_ROM_9'...
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_9/Mem_ROM_9.xci}}]
+generate_target all [get_files {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_8/Mem_ROM_8.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Mem_ROM_8'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Mem_ROM_8'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Mem_ROM_8'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Mem_ROM_8'...
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_8/Mem_ROM_8.xci}}]
+generate_target all [get_files {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_7/Mem_ROM_7.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Mem_ROM_7'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Mem_ROM_7'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Mem_ROM_7'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Mem_ROM_7'...
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_7/Mem_ROM_7.xci}}]
+generate_target all [get_files {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_6/Mem_ROM_6.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Mem_ROM_6'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Mem_ROM_6'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Mem_ROM_6'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Mem_ROM_6'...
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_6/Mem_ROM_6.xci}}]
+generate_target all [get_files {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_5/Mem_ROM_5.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Mem_ROM_5'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Mem_ROM_5'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Mem_ROM_5'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Mem_ROM_5'...
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_5/Mem_ROM_5.xci}}]
+generate_target all [get_files {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_4/Mem_ROM_4.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Mem_ROM_4'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Mem_ROM_4'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Mem_ROM_4'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Mem_ROM_4'...
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_4/Mem_ROM_4.xci}}]
+generate_target all [get_files {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_3/Mem_ROM_3.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Mem_ROM_3'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Mem_ROM_3'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Mem_ROM_3'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Mem_ROM_3'...
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_3/Mem_ROM_3.xci}}]
+generate_target all [get_files {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_2/Mem_ROM_2.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Mem_ROM_2'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Mem_ROM_2'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Mem_ROM_2'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Mem_ROM_2'...
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_2/Mem_ROM_2.xci}}]
+generate_target all [get_files {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_1/Mem_ROM_1.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Mem_ROM_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Mem_ROM_1'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Mem_ROM_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Mem_ROM_1'...
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_1/Mem_ROM_1.xci}}]
+generate_target all [get_files {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_0/Mem_ROM_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Mem_ROM_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Mem_ROM_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Mem_ROM_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Mem_ROM_0'...
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_0/Mem_ROM_0.xci}}]
+generate_target all [get_files {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Sumador/Sumador.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Sumador'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Sumador'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Sumador'...
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Sumador/Sumador.xci}}]
+generate_target all [get_files {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Contador_ADDR/Contador_ADDR.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Contador_ADDR'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Contador_ADDR'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Contador_ADDR'...
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Contador_ADDR/Contador_ADDR.xci}}]
+launch_runs Contador_ADDR_synth_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Contador_ADDR
+[Tue Oct 31 09:16:05 2023] Launched Contador_ADDR_synth_1...
+Run output will be captured here: C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Contador_ADDR_synth_1/runme.log
+wait_on_run Contador_ADDR_synth_1
+[Tue Oct 31 09:16:05 2023] Waiting for Contador_ADDR_synth_1 to finish...
+[Tue Oct 31 09:16:10 2023] Waiting for Contador_ADDR_synth_1 to finish...
+[Tue Oct 31 09:16:15 2023] Waiting for Contador_ADDR_synth_1 to finish...
+[Tue Oct 31 09:16:20 2023] Waiting for Contador_ADDR_synth_1 to finish...
+[Tue Oct 31 09:16:30 2023] Waiting for Contador_ADDR_synth_1 to finish...
+[Tue Oct 31 09:16:40 2023] Waiting for Contador_ADDR_synth_1 to finish...
+[Tue Oct 31 09:16:51 2023] Waiting for Contador_ADDR_synth_1 to finish...
+[Tue Oct 31 09:17:01 2023] Waiting for Contador_ADDR_synth_1 to finish...
+
+*** Running vivado
+    with args -log Contador_ADDR.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Contador_ADDR.tcl
+
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Contador_ADDR.tcl -notrace
+create_project: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 572.297 ; gain = 180.289
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Contador_ADDR
+Command: synth_design -top Contador_ADDR -part xc7a100tcsg324-3 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10388
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 1431.305 ; gain = 437.578
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Contador_ADDR' [c:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Contador_ADDR/synth/Contador_ADDR.vhd:69]
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_SCLR bound to: 1 - type: integer 
+	Parameter C_RESTRICT_COUNT bound to: 1 - type: integer 
+	Parameter C_COUNT_TO bound to: 1100010000 - type: string 
+	Parameter C_COUNT_BY bound to: 1 - type: string 
+	Parameter C_COUNT_MODE bound to: 0 - type: integer 
+	Parameter C_THRESH0_VALUE bound to: 1100001111 - type: string 
+	Parameter C_CE_OVERRIDES_SYNC bound to: 0 - type: integer 
+	Parameter C_HAS_THRESH0 bound to: 1 - type: integer 
+	Parameter C_HAS_LOAD bound to: 0 - type: integer 
+	Parameter C_LOAD_LOW bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_FB_LATENCY bound to: 0 - type: integer 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_17' declared at 'c:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Contador_ADDR/hdl/c_counter_binary_v12_0_vh_rfs.vhd:2133' bound to instance 'U0' of component 'c_counter_binary_v12_0_17' [c:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Contador_ADDR/synth/Contador_ADDR.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'Contador_ADDR' (0#1) [c:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Contador_ADDR/synth/Contador_ADDR.vhd:69]
+WARNING: [Synth 8-7129] Port AINIT in module c_reg_fd_v12_0_7_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLR in module c_reg_fd_v12_0_7_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ASET in module c_reg_fd_v12_0_7_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module c_reg_fd_v12_0_7_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module c_reg_fd_v12_0_7_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[9] in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[8] in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[7] in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[6] in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[5] in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[4] in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[3] in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[2] in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[1] in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[0] in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port add in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port c_in in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bypass in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port c_in in module c_addsub_v12_0_16_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in in module c_addsub_v12_0_16_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_signed in module c_addsub_v12_0_16_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_signed in module c_addsub_v12_0_16_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port load in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[9] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[8] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[7] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[6] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[5] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[4] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[3] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[2] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[1] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[0] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[9] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[8] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[7] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[6] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[5] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[4] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[3] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[2] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[1] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[0] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+TclStackFree: incorrect freePtr. Call out of sequence?
+[Tue Oct 31 09:17:06 2023] Contador_ADDR_synth_1 finished
+ERROR: [Vivado 12-13638] Failed runs(s) : 'Contador_ADDR_synth_1'
+wait_on_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:01:01 . Memory (MB): peak = 1535.980 ; gain = 2.797
+ERROR: [Common 17-39] 'wait_on_runs' failed due to earlier errors.
+ERROR: [Vivado 12-4146] Open Elaborated Design failed due to the following error:
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'wait_on_runs' failed due to earlier errors.
+
+
+report_ip_status -name ip_status 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/utils_1/imports/synth_1/TOP.dcp with file C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/TOP.dcp
+reset_run Contador_ADDR_synth_1
+launch_runs synth_1 -jobs 12

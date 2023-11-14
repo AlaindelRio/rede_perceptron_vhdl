@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Sep  7 06:15:30 2023
+# Process ID: 17744
+# Current directory: C:/Users/Alain/Desktop/TFG_VF/Vivado/Rede_Perceptron_UART
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18672 C:\Users\Alain\Desktop\TFG_VF\Vivado\Rede_Perceptron_UART\Rede_Perceptron_UART.xpr
+# Log file: C:/Users/Alain/Desktop/TFG_VF/Vivado/Rede_Perceptron_UART/vivado.log
+# Journal file: C:/Users/Alain/Desktop/TFG_VF/Vivado/Rede_Perceptron_UART\vivado.jou
+# Running On: Medion, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 6, Host memory: 17026 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Alain/Desktop/TFG_VF/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Comprobacion_Display [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Perceptron_Ud_O [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TOP [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
+synth_design -top TOP -part xc7a100tcsg324-3 -lint 
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Alain/Desktop/TFG_VF/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Alain/Desktop/TFG_VF/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

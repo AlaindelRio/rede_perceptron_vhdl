@@ -1,0 +1,146 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Nov 14 10:22:35 2023
+# Process ID: 8096
+# Current directory: D:/Github/Rede_Perceptron_UART
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15236 D:\Github\Rede_Perceptron_UART\Rede_Perceptron_UART.xpr
+# Log file: D:/Github/Rede_Perceptron_UART/vivado.log
+# Journal file: D:/Github/Rede_Perceptron_UART\vivado.jou
+# Running On: Medion, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 6, Host memory: 17026 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART' since last save.
+WARNING: [Project 1-312] File not found as 'D:/Github/Rede_Perceptron/Pesos/Memw0.COE'; using path 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron/Pesos/Memw0.COE' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'D:/Github/Rede_Perceptron/Pesos/Memw0.COE'; using path 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron/Pesos/Memw0.COE' instead.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.2/data/ip'.
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 1610.004 ; gain = 437.406
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files d:/Github/Rede_Perceptron/Pesos/Memw0.COE] -no_script -reset -force -quiet
+remove_files  d:/Github/Rede_Perceptron/Pesos/Memw0.COE
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/utils_1/imports/synth_1/TOP.dcp with file D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/TOP.dcp
+reset_target all [get_files  D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_0/Mem_ROM_0.xci]
+export_ip_user_files -of_objects  [get_files  D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_0/Mem_ROM_0.xci] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset Mem_ROM_0] D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_0/Mem_ROM_0.xci]
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Mem_ROM_0_synth_1
+
+INFO: [Project 1-386] Moving file 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_0/Mem_ROM_0.xci' from fileset 'Mem_ROM_0' to fileset 'sources_1'.
+INFO: [Project 1-386] Moving file 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_0.xcix' from fileset 'Mem_ROM_0' to fileset 'sources_1'.
+generate_target all [get_files  D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_0/Mem_ROM_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Mem_ROM_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Mem_ROM_0'...
+ERROR: [Ipptcl 7-519] NULL COE Data pointer: Unable to open the file 
+ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors.
+CRITICAL WARNING: [IP_Flow 19-1747] Failed to deliver file 'd:/Xilinx/Vivado/2023.2/data/ip/xilinx/blk_mem_gen_v8_4/hdl/mem_init_file.xit': ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors.
+
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'Mem_ROM_0'. Failed to generate 'Vivado VHDL Synthesis' outputs: 
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Failed to generate IP 'Mem_ROM_0'. Failed to generate 'Vivado VHDL Synthesis' outputs: 
+launch_runs synth_1 -jobs 11
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Mem_ROM_0'...
+ERROR: [Ipptcl 7-519] NULL COE Data pointer: Unable to open the file 
+ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors.
+CRITICAL WARNING: [IP_Flow 19-1747] Failed to deliver file 'd:/Xilinx/Vivado/2023.2/data/ip/xilinx/blk_mem_gen_v8_4/hdl/mem_init_file.xit': ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors.
+
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'Mem_ROM_0'. Failed to generate 'Vivado VHDL Synthesis' outputs: 
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Failed to generate IP 'Mem_ROM_0'. Failed to generate 'Vivado VHDL Synthesis' outputs: 
+launch_runs synth_1 -jobs 11
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Mem_ROM_0'...
+ERROR: [Ipptcl 7-519] NULL COE Data pointer: Unable to open the file 
+ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors.
+CRITICAL WARNING: [IP_Flow 19-1747] Failed to deliver file 'd:/Xilinx/Vivado/2023.2/data/ip/xilinx/blk_mem_gen_v8_4/hdl/mem_init_file.xit': ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors.
+
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'Mem_ROM_0'. Failed to generate 'Vivado VHDL Synthesis' outputs: 
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Failed to generate IP 'Mem_ROM_0'. Failed to generate 'Vivado VHDL Synthesis' outputs: 
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property CONFIG.Coe_File {D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/Pesos/Memw0.COE} [get_ips Mem_ROM_0]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Github\Rede_Perceptron_UART\Rede_Perceptron_UART.srcs\sources_1\new\TOP.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Github\Rede_Perceptron_UART\Rede_Perceptron_UART.srcs\sources_1\imports\new\Perceptron_Ud_O.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Github\Rede_Perceptron_UART\Rede_Perceptron_UART.srcs\sources_1\new\TOP.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Github\Rede_Perceptron_UART\Rede_Perceptron_UART.srcs\sources_1\imports\new\Perceptron_Ud_O.vhd:]
+generate_target all [get_files  D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_0/Mem_ROM_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Mem_ROM_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Mem_ROM_0'...
+ERROR: [Common 17-180] Spawn failed: No error
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Mem_ROM_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Mem_ROM_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Mem_ROM_0'...
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+export_ip_user_files -of_objects  [get_files C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron/Pesos/Memw0.COE] -no_script -reset -force -quiet
+remove_files  C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron/Pesos/Memw0.COE
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Github\Rede_Perceptron_UART\Rede_Perceptron_UART.srcs\sources_1\new\TOP.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Github\Rede_Perceptron_UART\Rede_Perceptron_UART.srcs\sources_1\imports\new\Perceptron_Ud_O.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+export_ip_user_files -of_objects  [get_files d:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/Pesos/Memw0.COE] -no_script -reset -force -quiet
+remove_files  d:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/Pesos/Memw0.COE
+file delete -force d:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/Pesos/Memw0.COE
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Github\Rede_Perceptron_UART\Rede_Perceptron_UART.srcs\sources_1\new\TOP.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Github\Rede_Perceptron_UART\Rede_Perceptron_UART.srcs\sources_1\imports\new\Perceptron_Ud_O.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+launch_runs synth_1 -jobs 11
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Mem_ROM_0
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Github\Rede_Perceptron_UART\Rede_Perceptron_UART.srcs\sources_1\new\TOP.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Github\Rede_Perceptron_UART\Rede_Perceptron_UART.srcs\sources_1\imports\new\Perceptron_Ud_O.vhd:]
+[Tue Nov 14 10:36:31 2023] Launched Mem_ROM_0_synth_1...
+Run output will be captured here: D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Mem_ROM_0_synth_1/runme.log
+[Tue Nov 14 10:36:31 2023] Launched synth_1...
+Run output will be captured here: D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/runme.log
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-39] 'launch_runs' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Github\Rede_Perceptron_UART\Rede_Perceptron_UART.srcs\sources_1\new\TOP.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Github\Rede_Perceptron_UART\Rede_Perceptron_UART.srcs\sources_1\imports\new\Perceptron_Ud_O.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Github\Rede_Perceptron_UART\Rede_Perceptron_UART.srcs\sources_1\imports\new\Perceptron_Ud_C.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Github\Rede_Perceptron_UART\Rede_Perceptron_UART.srcs\sources_1\new\TOP.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Github\Rede_Perceptron_UART\Rede_Perceptron_UART.srcs\sources_1\imports\new\Perceptron_Ud_O.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\Github\Rede_Perceptron_UART\Rede_Perceptron_UART.srcs\sources_1\imports\new\Perceptron_Ud_C.vhd:]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property CONFIG.Coe_File {C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/Pesos/Memw0.COE} [get_ips Mem_ROM_0]
+delete_report_configs [get_report_configs -of_objects [get_runs synth_1] synth_1_synth_report_utilization_0] 
+INFO: [Project 1-957] Report "synth_1_synth_report_utilization_0" was used in following dashboard(s) and has been removed.
+default_dashboard.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/utils_1/imports/synth_1/TOP.dcp with file D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/TOP.dcp
+reset_run Mem_ROM_0_synth_1
+launch_runs synth_1 -jobs 11
+[Tue Nov 14 10:44:34 2023] Launched Mem_ROM_0_synth_1...
+Run output will be captured here: D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Mem_ROM_0_synth_1/runme.log
+[Tue Nov 14 10:44:34 2023] Launched synth_1...
+Run output will be captured here: D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+[Tue Nov 14 11:18:39 2023] Launched impl_1...
+Run output will be captured here: D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 14 11:46:21 2023...

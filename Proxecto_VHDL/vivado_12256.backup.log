@@ -1,0 +1,248 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Oct 31 09:28:34 2023
+# Process ID: 12256
+# Current directory: C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3508 C:\Users\Alain\Desktop\TFG_Proxecto\Vivado\Rede_Perceptron_UART\Rede_Perceptron_UART.xpr
+# Log file: C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/vivado.log
+# Journal file: C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART\vivado.jou
+# Running On: Medion, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 6, Host memory: 17026 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/Proxecto/Vivado/Rede_Perceptron_UART' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Pesos/Memw0.COE', nor could it be found using path 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/TFG/Vivado/Rede_Perceptron/Pesos/Memw0.COE'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw4.COE', nor could it be found using path 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw4.COE'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw2.COE', nor could it be found using path 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw2.COE'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw1.COE', nor could it be found using path 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw1.COE'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw8.COE', nor could it be found using path 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw8.COE'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw9.COE', nor could it be found using path 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw9.COE'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw7.COE', nor could it be found using path 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw7.COE'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw5.COE', nor could it be found using path 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw5.COE'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw3.COE', nor could it be found using path 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw3.COE'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw6.COE', nor could it be found using path 'C:/Users/Alain/OneDrive - Universidade da Coruña/Apuntes EEIeA/TFG/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw6.COE'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.2/data/ip'.
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 1636.254 ; gain = 153.246
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 12
+[Tue Oct 31 09:29:42 2023] Launched Mem_ROM_9_synth_1, Mem_ROM_8_synth_1, Mem_ROM_7_synth_1, Mem_ROM_6_synth_1, Mem_ROM_5_synth_1, Mem_ROM_4_synth_1, Mem_ROM_3_synth_1, Mem_ROM_2_synth_1, Mem_ROM_1_synth_1, Mem_ROM_0_synth_1, Sumador_synth_1, Contador_ADDR_synth_1...
+Run output will be captured here:
+Mem_ROM_9_synth_1: C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Mem_ROM_9_synth_1/runme.log
+Mem_ROM_8_synth_1: C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Mem_ROM_8_synth_1/runme.log
+Mem_ROM_7_synth_1: C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Mem_ROM_7_synth_1/runme.log
+Mem_ROM_6_synth_1: C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Mem_ROM_6_synth_1/runme.log
+Mem_ROM_5_synth_1: C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Mem_ROM_5_synth_1/runme.log
+Mem_ROM_4_synth_1: C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Mem_ROM_4_synth_1/runme.log
+Mem_ROM_3_synth_1: C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Mem_ROM_3_synth_1/runme.log
+Mem_ROM_2_synth_1: C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Mem_ROM_2_synth_1/runme.log
+Mem_ROM_1_synth_1: C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Mem_ROM_1_synth_1/runme.log
+Mem_ROM_0_synth_1: C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Mem_ROM_0_synth_1/runme.log
+Sumador_synth_1: C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Sumador_synth_1/runme.log
+Contador_ADDR_synth_1: C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Contador_ADDR_synth_1/runme.log
+[Tue Oct 31 09:29:45 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1637.973 ; gain = 0.000
+export_ip_user_files -of_objects  [get_files C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Pesos/Memw0.COE] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw1.COE] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw2.COE] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw3.COE] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw4.COE] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw5.COE] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw6.COE] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw7.COE] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw8.COE] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw9.COE] -no_script -reset -force -quiet
+remove_files  {C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Pesos/Memw0.COE C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw1.COE C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw2.COE C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw3.COE C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw4.COE C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw5.COE C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw6.COE C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw7.COE C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw8.COE C:/Users/Alain/Desktop/TFG/Vivado/Rede_Perceptron/Perceptron_multicapa.srcs/sources_1/imports/Pesos/Memw9.COE}
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property CONFIG.Coe_File {c:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron/Pesos/Memw0.COE} [get_ips Mem_ROM_0]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+[Tue Oct 31 09:35:56 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/runme.log
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-3
+Top: TOP
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6592
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 2500.910 ; gain = 428.172
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/TOP.vhd:45]
+INFO: [Synth 8-3491] module 'Comprobacion_Display' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Compro_Display.vhd:34' bound to instance 'Inst_Comprobacion_Display' of component 'Comprobacion_Display' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/TOP.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'Comprobacion_Display' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Compro_Display.vhd:44]
+INFO: [Synth 8-3491] module 'Sig_a_abs' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/sig_a_abs.vhd:35' bound to instance 'Inst_Sig_a_abs' of component 'Sig_a_abs' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Compro_Display.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'Sig_a_abs' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/sig_a_abs.vhd:40]
+WARNING: [Synth 8-614] signal 'aux_D' is read in the process but is not in the sensitivity list [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/sig_a_abs.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'Sig_a_abs' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/sig_a_abs.vhd:40]
+INFO: [Synth 8-3491] module 'Rex_Suma_Final' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Suma_Final.vhd:34' bound to instance 'Inst_Rex_Suma_Final' of component 'Rex_Suma_Final' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Compro_Display.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'Rex_Suma_Final' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Suma_Final.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Rex_Suma_Final' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Suma_Final.vhd:44]
+INFO: [Synth 8-3491] module 'decod7seg' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/BLOQUE_1_2_3/decod7seg.vhd:5' bound to instance 'Inst_decod7seg' of component 'decod7seg' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Compro_Display.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'decod7seg' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/BLOQUE_1_2_3/decod7seg.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'decod7seg' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/BLOQUE_1_2_3/decod7seg.vhd:15]
+INFO: [Synth 8-3491] module 'div_244Hz' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/BLOQUE_1_2_3/div_244Hz.vhd:5' bound to instance 'Inst_div_244Hz' of component 'div_244Hz' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Compro_Display.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'div_244Hz' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/BLOQUE_1_2_3/div_244Hz.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'div_244Hz' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/BLOQUE_1_2_3/div_244Hz.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'Comprobacion_Display' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Compro_Display.vhd:44]
+INFO: [Synth 8-3491] module 'RN' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:34' bound to instance 'Inst_RN' of component 'RN' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/TOP.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'RN' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:45]
+INFO: [Synth 8-3491] module 'Contador_ADDR' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Contador_ADDR_stub.vhdl:6' bound to instance 'Ins_Contador_ADDR' of component 'Contador_ADDR' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:198]
+INFO: [Synth 8-638] synthesizing module 'Contador_ADDR' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Contador_ADDR_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_C' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_C.vhd:34' bound to instance 'Unidade_Control' of component 'Perceptron_Ud_C' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'Perceptron_Ud_C' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_C.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'Perceptron_Ud_C' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_C.vhd:46]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_0' of component 'Perceptron_Ud_O' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:220]
+INFO: [Synth 8-638] synthesizing module 'Perceptron_Ud_O' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:38]
+INFO: [Synth 8-3491] module 'Multiplicador' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Multiplicador.vhd:36' bound to instance 'Inst_Multiplicador' of component 'Multiplicador' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'Multiplicador' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Multiplicador.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Multiplicador' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Multiplicador.vhd:42]
+INFO: [Synth 8-3491] module 'Sumador' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Sumador_stub.vhdl:6' bound to instance 'Inst_Sumador' of component 'Sumador' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'Sumador' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Sumador_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Rexistro' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Rexistro.vhd:25' bound to instance 'Inst_Rexistro' of component 'Rexistro' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'Rexistro' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Rexistro.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'Rexistro' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Rexistro.vhd:34]
+INFO: [Synth 8-3491] module 'F_activacion' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/F_activacion.vhd:26' bound to instance 'Inst_F_Activacion' of component 'F_Activacion' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'F_activacion' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/F_activacion.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'F_activacion' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/F_activacion.vhd:31]
+INFO: [Synth 8-3491] module 'Rexistro_Z' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Biestable.vhd:34' bound to instance 'Inst_Rexistro_Z' of component 'Rexistro_Z' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'Rexistro_Z' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Biestable.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Rexistro_Z' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Biestable.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Perceptron_Ud_O' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:38]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_1' of component 'Perceptron_Ud_O' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:233]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_2' of component 'Perceptron_Ud_O' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:246]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_3' of component 'Perceptron_Ud_O' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:259]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_4' of component 'Perceptron_Ud_O' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:272]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_5' of component 'Perceptron_Ud_O' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:285]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_6' of component 'Perceptron_Ud_O' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:298]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_7' of component 'Perceptron_Ud_O' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:311]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_8' of component 'Perceptron_Ud_O' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:324]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_9' of component 'Perceptron_Ud_O' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:337]
+INFO: [Synth 8-3491] module 'Mux' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Mux.vhd:34' bound to instance 'Inst_Mux' of component 'Mux' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:350]
+INFO: [Synth 8-638] synthesizing module 'Mux' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Mux.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Mux' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Mux.vhd:41]
+INFO: [Synth 8-3491] module 'Mem_ROM_0' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Mem_ROM_0_stub.vhdl:6' bound to instance 'ROM_0' of component 'Mem_ROM_0' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:358]
+INFO: [Synth 8-638] synthesizing module 'Mem_ROM_0' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Mem_ROM_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Mem_ROM_1' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Mem_ROM_1_stub.vhdl:6' bound to instance 'ROM_1' of component 'Mem_ROM_1' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:365]
+INFO: [Synth 8-638] synthesizing module 'Mem_ROM_1' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Mem_ROM_1_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Mem_ROM_2' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Mem_ROM_2_stub.vhdl:6' bound to instance 'ROM_2' of component 'Mem_ROM_2' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:371]
+INFO: [Synth 8-638] synthesizing module 'Mem_ROM_2' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Mem_ROM_2_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Mem_ROM_3' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Mem_ROM_3_stub.vhdl:6' bound to instance 'ROM_3' of component 'Mem_ROM_3' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:378]
+INFO: [Synth 8-638] synthesizing module 'Mem_ROM_3' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Mem_ROM_3_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Mem_ROM_4' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Mem_ROM_4_stub.vhdl:6' bound to instance 'ROM_4' of component 'Mem_ROM_4' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:384]
+INFO: [Synth 8-638] synthesizing module 'Mem_ROM_4' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Mem_ROM_4_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Mem_ROM_5' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Mem_ROM_5_stub.vhdl:6' bound to instance 'ROM_5' of component 'Mem_ROM_5' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:391]
+INFO: [Synth 8-638] synthesizing module 'Mem_ROM_5' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Mem_ROM_5_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Mem_ROM_6' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Mem_ROM_6_stub.vhdl:6' bound to instance 'ROM_6' of component 'Mem_ROM_6' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:397]
+INFO: [Synth 8-638] synthesizing module 'Mem_ROM_6' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Mem_ROM_6_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Mem_ROM_7' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Mem_ROM_7_stub.vhdl:6' bound to instance 'ROM_7' of component 'Mem_ROM_7' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:404]
+INFO: [Synth 8-638] synthesizing module 'Mem_ROM_7' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Mem_ROM_7_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Mem_ROM_8' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Mem_ROM_8_stub.vhdl:6' bound to instance 'ROM_8' of component 'Mem_ROM_8' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:411]
+INFO: [Synth 8-638] synthesizing module 'Mem_ROM_8' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Mem_ROM_8_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Mem_ROM_9' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Mem_ROM_9_stub.vhdl:6' bound to instance 'ROM_9' of component 'Mem_ROM_9' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:417]
+INFO: [Synth 8-638] synthesizing module 'Mem_ROM_9' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/realtime/Mem_ROM_9_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Mux_Sumatorio' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Mux_Sumatorio.vhd:34' bound to instance 'Inst_Mux_Sumatorio' of component 'Mux_Sumatorio' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:424]
+INFO: [Synth 8-638] synthesizing module 'Mux_Sumatorio' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Mux_Sumatorio.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'Mux_Sumatorio' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Mux_Sumatorio.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'RN' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:45]
+INFO: [Synth 8-3491] module 'TOP_UART_Recepcion' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/TOP_UART_Recepcion.vhd:23' bound to instance 'Inst_TOP_UART_Recepcion' of component 'TOP_UART_Recepcion' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/TOP.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'TOP_UART_Recepcion' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/TOP_UART_Recepcion.vhd:31]
+INFO: [Synth 8-3491] module 'UART_recepcion_Ud_Control' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Ud_Control_UART_recepcion.vhd:23' bound to instance 'Inst_UART_recepcion_Ud_Control' of component 'UART_recepcion_Ud_Control' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/TOP_UART_Recepcion.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'UART_recepcion_Ud_Control' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Ud_Control_UART_recepcion.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'UART_recepcion_Ud_Control' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Ud_Control_UART_recepcion.vhd:37]
+INFO: [Synth 8-3491] module 'UART_recepcion_Ud_Operativa' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:23' bound to instance 'Inst_UART_recepcion_Ud_Operativa' of component 'UART_recepcion_Ud_Operativa' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/TOP_UART_Recepcion.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'UART_recepcion_Ud_Operativa' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:38]
+INFO: [Synth 8-3491] module 'Contador' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/CONT_ASC.vhd:8' bound to instance 'Inst_Contador' of component 'Contador' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'Contador' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/CONT_ASC.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Contador' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/CONT_ASC.vhd:15]
+INFO: [Synth 8-3491] module 'Rex_desprazamento' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Reg_desplazamiento.vhd:6' bound to instance 'Inst_Rex_desprazamento' of component 'Rex_desprazamento' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'Rex_desprazamento' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Reg_desplazamiento.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Rex_desprazamento' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Reg_desplazamiento.vhd:14]
+INFO: [Synth 8-3491] module 'Rexisto_saida_UART' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Rexisto_saida_UART.vhd:24' bound to instance 'Inst_Rexisto_saida_UART' of component 'Rexisto_saida_UART' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'Rexisto_saida_UART' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Rexisto_saida_UART.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'Rexisto_saida_UART' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Rexisto_saida_UART.vhd:32]
+INFO: [Synth 8-3491] module 'Detector_flanco' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Detector_flanco.vhd:23' bound to instance 'Inst_Detector_flanco' of component 'Detector_flanco' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'Detector_flanco' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Detector_flanco.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'Detector_flanco' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Detector_flanco.vhd:30]
+INFO: [Synth 8-3491] module 'Cont_ciclos' declared at 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Cont_ciclos.vhd:25' bound to instance 'Inst_Cont_ciclos' of component 'Cont_ciclos' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'Cont_ciclos' [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Cont_ciclos.vhd:34]
+	Parameter Baudios bound to: 115200 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Cont_ciclos' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Cont_ciclos.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'UART_recepcion_Ud_Operativa' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'TOP_UART_Recepcion' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/TOP_UART_Recepcion.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (0#1) [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/TOP.vhd:45]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 2614.754 ; gain = 542.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 2614.754 ; gain = 542.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 2614.754 ; gain = 542.016
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/Contador_ADDR/Contador_ADDR.dcp' for cell 'Inst_RN/Ins_Contador_ADDR'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/Mem_ROM_0/Mem_ROM_0.dcp' for cell 'Inst_RN/ROM_0'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/Mem_ROM_1/Mem_ROM_1.dcp' for cell 'Inst_RN/ROM_1'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/Mem_ROM_2/Mem_ROM_2.dcp' for cell 'Inst_RN/ROM_2'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/Mem_ROM_3/Mem_ROM_3.dcp' for cell 'Inst_RN/ROM_3'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/Mem_ROM_4/Mem_ROM_4.dcp' for cell 'Inst_RN/ROM_4'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/Mem_ROM_5/Mem_ROM_5.dcp' for cell 'Inst_RN/ROM_5'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/Mem_ROM_6/Mem_ROM_6.dcp' for cell 'Inst_RN/ROM_6'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/Mem_ROM_7/Mem_ROM_7.dcp' for cell 'Inst_RN/ROM_7'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/Mem_ROM_8/Mem_ROM_8.dcp' for cell 'Inst_RN/ROM_8'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/Mem_ROM_9/Mem_ROM_9.dcp' for cell 'Inst_RN/ROM_9'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/.Xil/Vivado-12256-Medion/Sumador/Sumador.dcp' for cell 'Inst_RN/Neurona_Ud_O_0/Inst_Sumador'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 2614.754 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/constrs_1/imports/Downloads/PinoutNexys4.xdc]
+Finished Parsing XDC File [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/constrs_1/imports/Downloads/PinoutNexys4.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2683.062 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 2738.359 ; gain = 665.621
+122 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:26 . Memory (MB): peak = 2738.359 ; gain = 1048.043
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  1 20:43:52 2023...

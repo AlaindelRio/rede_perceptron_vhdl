@@ -1,0 +1,184 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date             : Tue Nov 14 11:21:14 2023
+| Host             : Medion running 64-bit major release  (build 9200)
+| Command          : report_power -file TOP_power_routed.rpt -pb TOP_power_summary_routed.pb -rpx TOP_power_routed.rpx
+| Design           : TOP
+| Device           : xc7a100tcsg324-3
+| Design State     : routed
+| Grade            : extended
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 15.626       |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 15.258       |
+| Device Static (W)        | 0.368        |
+| Effective TJA (C/W)      | 4.6          |
+| Max Ambient (C)          | 28.7         |
+| Junction Temperature (C) | 96.3         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| Slice Logic    |     2.434 |     1233 |       --- |             --- |
+|   LUT as Logic |     2.378 |      409 |     63400 |            0.65 |
+|   CARRY4       |     0.031 |       15 |     15850 |            0.09 |
+|   BUFG         |     0.013 |        2 |        32 |            6.25 |
+|   Register     |     0.011 |      506 |    126800 |            0.40 |
+|   F7/F8 Muxes  |     0.000 |        4 |     63400 |           <0.01 |
+|   Others       |     0.000 |       90 |       --- |             --- |
+| Signals        |     1.893 |     1508 |       --- |             --- |
+| Block RAM      |     0.000 |        5 |       135 |            3.70 |
+| DSPs           |     6.422 |       20 |       240 |            8.33 |
+| I/O            |     4.510 |       33 |       210 |           15.71 |
+| Static Power   |     0.368 |          |           |                 |
+| Total          |    15.626 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint    |       1.000 |    11.001 |      10.772 |      0.229 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.211 |       0.164 |      0.046 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     1.274 |       1.270 |      0.004 |       NA    | Unspecified | NA         |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.007 |       0.000 |      0.007 |       NA    | Unspecified | NA         |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 4.6                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++--------------------------------------+-----------+
+| Name                                 | Power (W) |
++--------------------------------------+-----------+
+| TOP                                  |    15.258 |
+|   Inst_Comprobacion_Display          |     0.205 |
+|     Inst_Rex_Suma_Final              |     0.013 |
+|     Inst_Sig_a_abs                   |     0.040 |
+|     Inst_decod7seg                   |     0.106 |
+|     Inst_div_244Hz                   |     0.046 |
+|   Inst_RN                            |    10.256 |
+|     Ins_Contador_ADDR                |     0.028 |
+|       U0                             |     0.028 |
+|     Neurona_Ud_O_0                   |     1.157 |
+|       Inst_Rexistro                  |     0.401 |
+|       Inst_Sumador                   |     0.756 |
+|     Neurona_Ud_O_1                   |     0.763 |
+|       Inst_Sumador                   |     0.763 |
+|     Neurona_Ud_O_2                   |     0.755 |
+|       Inst_Sumador                   |     0.755 |
+|     Neurona_Ud_O_3                   |     0.862 |
+|       Inst_Rexistro                  |     0.100 |
+|       Inst_Sumador                   |     0.762 |
+|     Neurona_Ud_O_4                   |     0.792 |
+|       Inst_Sumador                   |     0.792 |
+|     Neurona_Ud_O_5                   |     0.759 |
+|       Inst_Sumador                   |     0.759 |
+|     Neurona_Ud_O_6                   |     0.751 |
+|       Inst_Sumador                   |     0.751 |
+|     Neurona_Ud_O_7                   |     0.972 |
+|       Inst_Rexistro                  |     0.204 |
+|       Inst_Sumador                   |     0.768 |
+|     Neurona_Ud_O_8                   |     0.782 |
+|       Inst_Sumador                   |     0.782 |
+|     Neurona_Ud_O_9                   |     0.778 |
+|       Inst_Sumador                   |     0.778 |
+|     Unidade_Control                  |     1.857 |
+|   Inst_TOP_UART_Recepcion            |     0.074 |
+|     Inst_UART_recepcion_Ud_Control   |     0.003 |
+|     Inst_UART_recepcion_Ud_Operativa |     0.071 |
+|       Inst_Cont_ciclos               |     0.064 |
+|       Inst_Detector_flanco           |     0.007 |
++--------------------------------------+-----------+
+
+

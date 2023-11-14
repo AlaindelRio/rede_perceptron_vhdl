@@ -1,0 +1,303 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Oct 31 09:29:50 2023
+# Process ID: 8880
+# Current directory: C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Contador_ADDR_synth_1
+# Command line: vivado.exe -log Contador_ADDR.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Contador_ADDR.tcl
+# Log file: C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Contador_ADDR_synth_1/Contador_ADDR.vds
+# Journal file: C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Contador_ADDR_synth_1\vivado.jou
+# Running On: Medion, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 6, Host memory: 17026 MB
+#-----------------------------------------------------------
+source Contador_ADDR.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 574.371 ; gain = 184.820
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Contador_ADDR
+Command: synth_design -top Contador_ADDR -part xc7a100tcsg324-3 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16604
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:25 . Memory (MB): peak = 1435.023 ; gain = 441.383
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Contador_ADDR' [c:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Contador_ADDR/synth/Contador_ADDR.vhd:69]
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_SCLR bound to: 1 - type: integer 
+	Parameter C_RESTRICT_COUNT bound to: 1 - type: integer 
+	Parameter C_COUNT_TO bound to: 1100010000 - type: string 
+	Parameter C_COUNT_BY bound to: 1 - type: string 
+	Parameter C_COUNT_MODE bound to: 0 - type: integer 
+	Parameter C_THRESH0_VALUE bound to: 1100001111 - type: string 
+	Parameter C_CE_OVERRIDES_SYNC bound to: 0 - type: integer 
+	Parameter C_HAS_THRESH0 bound to: 1 - type: integer 
+	Parameter C_HAS_LOAD bound to: 0 - type: integer 
+	Parameter C_LOAD_LOW bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_FB_LATENCY bound to: 0 - type: integer 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_17' declared at 'c:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Contador_ADDR/hdl/c_counter_binary_v12_0_vh_rfs.vhd:2133' bound to instance 'U0' of component 'c_counter_binary_v12_0_17' [c:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Contador_ADDR/synth/Contador_ADDR.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'Contador_ADDR' (0#1) [c:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Contador_ADDR/synth/Contador_ADDR.vhd:69]
+WARNING: [Synth 8-7129] Port AINIT in module c_reg_fd_v12_0_7_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLR in module c_reg_fd_v12_0_7_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ASET in module c_reg_fd_v12_0_7_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module c_reg_fd_v12_0_7_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module c_reg_fd_v12_0_7_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[9] in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[8] in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[7] in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[6] in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[5] in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[4] in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[3] in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[2] in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[1] in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[0] in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port add in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port c_in in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bypass in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_addsub_v12_0_16_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port c_in in module c_addsub_v12_0_16_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in in module c_addsub_v12_0_16_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_signed in module c_addsub_v12_0_16_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_signed in module c_addsub_v12_0_16_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port load in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[9] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[8] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[7] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[6] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[5] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[4] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[3] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[2] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[1] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[0] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[9] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[8] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[7] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[6] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[5] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[4] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[3] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[2] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[1] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[0] in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_counter_binary_v12_0_17_legacy is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:37 . Memory (MB): peak = 1573.086 ; gain = 579.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:39 . Memory (MB): peak = 1573.086 ; gain = 579.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:39 . Memory (MB): peak = 1573.086 ; gain = 579.445
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1573.086 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Contador_ADDR/Contador_ADDR_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Contador_ADDR/Contador_ADDR_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Contador_ADDR_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Contador_ADDR_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1638.988 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1639.305 ; gain = 0.316
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:01:09 . Memory (MB): peak = 1639.305 ; gain = 645.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:01:09 . Memory (MB): peak = 1639.305 ; gain = 645.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Contador_ADDR_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:01:09 . Memory (MB): peak = 1639.305 ; gain = 645.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1639.305 ; gain = 645.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port SSET in module c_counter_binary_v12_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module c_counter_binary_v12_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UP in module c_counter_binary_v12_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LOAD in module c_counter_binary_v12_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[9] in module c_counter_binary_v12_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[8] in module c_counter_binary_v12_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[7] in module c_counter_binary_v12_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[6] in module c_counter_binary_v12_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[5] in module c_counter_binary_v12_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[4] in module c_counter_binary_v12_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[3] in module c_counter_binary_v12_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[2] in module c_counter_binary_v12_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[1] in module c_counter_binary_v12_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port L[0] in module c_counter_binary_v12_0_17_viv is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:01:18 . Memory (MB): peak = 1639.305 ; gain = 645.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:01:40 . Memory (MB): peak = 1639.305 ; gain = 645.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:01:40 . Memory (MB): peak = 1639.305 ; gain = 645.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:04 ; elapsed = 00:01:40 . Memory (MB): peak = 1639.305 ; gain = 645.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:04 ; elapsed = 00:01:55 . Memory (MB): peak = 1639.305 ; gain = 645.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:04 ; elapsed = 00:01:55 . Memory (MB): peak = 1639.305 ; gain = 645.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:04 ; elapsed = 00:01:55 . Memory (MB): peak = 1639.305 ; gain = 645.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:04 ; elapsed = 00:01:55 . Memory (MB): peak = 1639.305 ; gain = 645.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:01:55 . Memory (MB): peak = 1639.305 ; gain = 645.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:04 ; elapsed = 00:01:55 . Memory (MB): peak = 1639.305 ; gain = 645.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     1|
+|2     |LUT5  |     4|
+|3     |MUXCY |     9|
+|4     |XORCY |    10|
+|5     |FDRE  |    11|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:04 ; elapsed = 00:01:55 . Memory (MB): peak = 1639.305 ; gain = 645.664
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:01:42 . Memory (MB): peak = 1639.305 ; gain = 579.445
+Synthesis Optimization Complete : Time (s): cpu = 00:00:04 ; elapsed = 00:01:56 . Memory (MB): peak = 1639.305 ; gain = 645.664
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1639.305 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1639.305 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 3 instances
+
+Synth Design complete | Checksum: 8122910f
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 63 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:02:14 . Memory (MB): peak = 1639.305 ; gain = 1054.172
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1639.305 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Contador_ADDR_synth_1/Contador_ADDR.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Contador_ADDR, cache-ID = ec47a199972df92e
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1639.305 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Alain/Desktop/TFG_Proxecto/Vivado/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/Contador_ADDR_synth_1/Contador_ADDR.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Contador_ADDR_utilization_synth.rpt -pb Contador_ADDR_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 31 09:32:54 2023...
