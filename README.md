@@ -5,7 +5,7 @@ Guía para a realización e implementación dunha rede perceptrón na placa de d
 Utilízase o coñecido conxunto de datos MNIST, un estándar no mundo da aprendizaxe automática para a clasificación de díxitos manuscritos. O modelo escollido é unha rede de perceptróns, a estrutura neuronal máis fundamental, cunha arquitectura que conta con 784 entradas e 10 neuronas na capa de saída, correspondentes a cada díxito do 0 ao 9.
 
 <div align="center">
-  <img src="img/esquema_xeral.png" width="500" alt="Esquema xeral do exemplo de implementación da rede" />
+  <img src="img/esquema_xeral.png" width="700" alt="Esquema xeral do exemplo de implementación da rede" />
 </div>
 
 ## Hardware e Ferramentas Utilizadas
