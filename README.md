@@ -406,7 +406,7 @@ Para o exemplo da Figura 6.2, seleccionouse a mostra 2 do conxunto de datos de t
 No caso da imaxe da dereita da Figura 6.2 estase visualizando a saída da neurona 2, polo que o seu valor debería (e neste caso é) ser positivo xa que se está a identificar o díxito 2.
 
 <div align="center">
-    <img src="img/resultado_final_0.jpg" alt="Saída neurona 0" width="40%" style="margin-right: 50;"/>
-    <img src="img/resultado_final_1.jpg" alt="Saída neurona 2" width="40%" />
+    <img src="img/resultado_final_0.jpg" alt="Saída neurona 0" width="50%"/>
+    <img src="img/resultado_final_1.jpg" alt="Saída neurona 2" width="50%" />
 <p align="center"><b>Figura 6.2: Resultados da impplementación física da imaxe 2</b></p>
 </div>
