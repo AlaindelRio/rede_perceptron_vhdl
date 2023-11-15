@@ -316,7 +316,53 @@ Para realizar o descrito creouse o módulo *TOP_UART_Recepcion*. Cada un dos sub
 
 A unidade Operativa do módulo UART conformano os bloques da Figura 5.3 Cada un deles realiza as seguintes tarefas:
 
+- **Detector_flanco:** Como o seu nome indica, é un detector de flanco descendente. Cando o sinal RXD comeza a caer a cero, a saída do detector de flanco establécese en un durante un ciclo de reloxo (identificación do bit de start). Esta entrada na máquina de estado é a que inicializa o bloque.
+
+- **Cont_ciclos:** É o contador encargado de realizar o cómputo do número de ciclos de reloxo entre a transmisión de cada un dos bits da trama. Na metade da transmisión actívase a saída *MetadePulso*, utilizada para gardar o valor do bit.
+
+- **Rex_desprazamento:** Rexistro de desprazamento que vai almaceando, bit a bit (de menos a máis significativo), o valor do dato. A activación da carga do novo bit prodúcese despois de darse un pulso no sinal *MetadePulso*.
+
+- **Contador:** Contador ascendente que se incrementa cada vez que se garda un novo bit. Cando o contador chega a 7 realizase un último gardado e dase por finalizada a recepción dos 8 bits.
+
+- **Rexistro_saida_UART:** Rexistro de almacenamento do dato (píxel) de entrada. Unha vez obtidos os 8 bits no rexistro de desplazamento, estes son volcados neste rexistro, listos pra ser utilizados.
+
+
 <div align="center">
   <img src="img/ud_o_uart.png" width="50%" alt="Unidade Operativa do módulo UART" />
   <p><b>Figura 5.3: Unidade Operativa do módulo UART</b></p>
 </div>
+
+### 5.2 Unidade de Control do módulo UART
+
+Este módulo implementa a máquina de estados que realiza o control dos módulos da unidade operativa. A Figura 5.4 representa os diferentes estados e as accións que se levan a cabo en cada un.
+
+
+<div align="center">
+  <img src="img/ud_c_uart.jpg" width="50%" alt="Unidade de Control do módulo UART" />
+  <p><b>Figura 5.4: Unidade de Control do módulo UART</b></p>
+</div>
+
+- **EsperaInicio:** Neste estado agárdase por un flanco de baixada do sinal RXD, indicativo do inicio da transmisión. É o único dos estados onde o contador de ciclos está deshabilitado (EN = 0) e o sinal *RST_cont* a 1, este último é un reset síncrono do contador de ciclos.
+
+- **BitStart:** Unha vez detectado o bit de inicio, espérase medio pulso, (8.68/2 μs). A activación de *MetadePulso* indica esta transición. Neste paso, simplemente faise un atraso para posicionarse correctamente e así adquirir os bits con seguridade.
+
+- **EsperaBit:** É similar ao estado anterior, coa diferenza de que os novos bit xa son o contido do dato e non bits de control da comunicación. Unha vez activo *MetadePulso* pásase ao seguinte paso.
+
+- **GardaBit:** Este estado encárgase de gardar o bit entrante e introducilo no rexistro de desprazamento. Unha vez gardado o bit, volvería ao estado anterior esperando outro pulso. Este ciclo repítese 8 veces.
+
+- **CargaSaida:** Unha vez adquiridos os 8 bits que forman un dos píxeles, actívase o sinal de control *LoadSaida* e volcase o byte do rexistro de desprazamento ao de saída.
+
+- **Fin:** Indícase que o byte foi recibido e xa está listo para ser tratado nas seguintes etapas.
+
+
+### 5.3 Envío de datos dende o ordenador
+
+Para o envío dos datos dende o ordenador utilízase o entorno de Matlab. O código [c_script_envio_mensaxe_uart](/Codigo_MATLAB/scripts/c_script_envio_mensaxe_uart.m) é o encargado da comunicación. Hai que considerar o cambio da variable *Port* en función do porto USB do ordenado ao que se conecte a FPGA. 
+
+Coa variable *imaxe* seleccionase una das 10 000 mostras para ser enviadas a través do porto serie.
+
+## 6 Implementación final e funcionamento
+
+Para realizar a implementación final é necesario ter un modo de testear que tódalas operacións levadas a cabo pola FPGA fanse correctamente. En primer lugar, establécese unha conexión entre a batería de leds e as saídas de cada neurona, correspondendo cada un dos leds, do 0 ao 9, cos díxitos a identificar. A maiores, para visualizar que as operacións internas son as correctas, implementase un módulo para representar no display de 7 segmentos os resultados das multiplicacións.
+
+
