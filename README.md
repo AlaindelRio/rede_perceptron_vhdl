@@ -365,7 +365,7 @@ Coa variable *imaxe* seleccionase una das 10 000 mostras para ser enviadas a tra
 
 Para realizar a implementación final é necesario ter un modo de testear que tódalas operacións levadas a cabo pola FPGA fanse correctamente. En primer lugar, establécese unha conexión entre a batería de leds e as saídas de cada neurona, correspondendo cada un dos leds, do 0 ao 9, cos díxitos a identificar. A maiores, para visualizar que as operacións internas son as correctas, implementase un módulo para representar no display de 7 segmentos os resultados das multiplicacións.
 
-## 6.1 Implementación de display
+### 6.1 Implementación de display
 
 O módulo ten por obxectivo visualizar o resultado final obtido no rexistro de almacenamento da suma acumulada. Con este valor e co código [d_probas_funcionais](/Codigo_MATLAB/scripts/d_probas_funcionais.m), pódese realizar una comparativa e testear o funcionamento.
 
@@ -387,4 +387,25 @@ A maiores, engadiuse un multiplexor para seleccionar que saída dos rexistros da
 <div align="center">
   <img src="img/taboa_2.png" width="50%" alt="Selector visualización display" />
   <p><b>Táboa 6.1: Selector visualización display</b></p>
+</div>
+
+
+### 6.2 Comprobación do funcionamento da implementación final
+
+Una vez conectada a Nexys 4 ao ordenador mediante un conector USB e cargado o bitstream síguense os seguintes pasos para comprobar o funcionamento:
+
+1. Selección do sumatorio acumulado seguindo a táboa mencionada anteriormente.
+2. Configuración do porto COM no script de MATLAB mencionado anteriormente, selección da imaxe e execución do código.
+3. Na sección 2 do código [d_probas_funcionais](/Codigo_MATLAB/scripts/d_probas_funcionais.m) cambiar o valor de *numero* pola neurona seleccionada cos switches e modificar *imaxe* co número de mostra que se enviou á FPGA e executar.
+4. Verificar a concordancia entre os datos.
+
+
+No caso de querer seleccionar outra saída é necesario volver a facer o ciclo anterior.
+
+Para o exemplo da Figura 6.2, seleccionouse a mostra 2 do conxunto de datos de test, que neste caso corresponde co díxito 2. Nas imaxes pode verse como o led LD2 está acendido, o que significa que a clasificación foi levada con éxito. Na imaxe da esquerda pode identificarse o bit de signo da saída da neurna seleccionada, a 0, e o número ``FCE95C'' en hexadecimal. Que o número sexa negativo é bo sinal, pero para confirmar que tódolos cálculos son correctos necesítase a saída real desta mesma neurona. A sección 2 do código [d_probas_funcionais](/Codigo_MATLAB/scripts/d_probas_funcionais.m) proporciona dúas matrices cos valores reais das operacións de multiplicación e sumatorio para cada una das 785 iteracións. O resultado da matríz de MATLAB *Mult_sum_hex* é exactamente o mesmo que o marcado polo display, confirmando a boa execución do perceptrón na FPGA.
+
+<div align="center">
+    <img src="img/resultado_final_0.jpg" alt="Saída neurona 0" width="40%" style="margin-right: 50;"/>
+    <img src="img/resultado_final_1.jpg" alt="Saída neurona 2" width="40%" />
+<p align="center"><b>Figura 6.2: Resultados da impplementación física da imaxe 2</b></p>
 </div>
