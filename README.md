@@ -43,15 +43,6 @@ Os datos de partida obteñense da base de datos MNIST ([http://yann.lecun.com/ex
 <p align="center"><b>Figura 1.1: Representacións dos datos</b></p>
 </div>
 
-<p float="left">
-    <img src="img/mnist_dig_1.png" alt="Representación do nº 1" width="200" style="margin-right: 50;"/>
-    <img src="img/mnist_dig_2.png" alt="Representación do nº 2" width="200" style="margin-right: 50;"/>
-    <img src="img/mnist_dig_3.png" alt="Representación do nº 3" width="200" />
-</p>
-<div align="center">
-  <p align="center"><b>Figura 1.1: Representacións dos datos</b></p>
-</div>
-
 As 70.00 mil móstras están divididas en dous grupos, 60.000 exemplos para o conxunto de adestramento e 10.000 para o conxunto de proba. Na seguinte Táboa 1.1, listanse os arquivos obtidos da base de datos MNIST:
 
 
@@ -93,7 +84,7 @@ O paso previo ao adestramento da rede é acondicionar os datos conforme ao descr
 - XTest (28x28x10000) → DatosT (784x10000).
 - YTest (10000x1) → EtiquetasT (10x10000).
 
-De este modo, as matrices de datos resultantes estarán dispostas de maneira que cada unha das imaxes conformarana tódolas filas (píxeles) dunha columna e a correspondente etiqueta estará na mesma columna da matriz de etiquetas. A saída correspondente da matriz de etiquetas está activa con un 1.
+De este modo, as matrices de datos resultantes estarán dispostas de maneira que cada unha das imaxes conformarana tódolas filas (píxeles) dunha columna e a correspondente etiqueta estará na mesma columna da matriz de etiquetas. A saída correspondente da matriz de etiquetas está activa con un 1. Na Figura 2.2 represéntase á esquerda a matriz de imaxes e á dereita a matriz de etiquetas.
 
 <p float="left">
   <img src="/img/imaxes_mnist.jpg" width="300" /><p>
@@ -103,4 +94,12 @@ De este modo, as matrices de datos resultantes estarán dispostas de maneira que
   <p><b>Figura 2.2: Matrices de datos</b></p>
 </div>
 
+A maiores realízase un normalizado dos datos para facer unha comparativa da precisión da rede adestrada cos datos normalizados e sen normalizar.
 
+A normalización é un paso importante no preprocesamento de datos para moitos algoritmos de aprendizaxe automática e, en particular, as redes neuronais. Cando se trata de imáxes con píxeles que conteñen valores entre o 0 eo 255 o que se fai é dividir cada un destes píxeles por 255, de este modo limítase o rango a [0, 1]. Xeralmente, co adestramento de datos normalizados, os resultados son máis precisos.
+
+### 2.2 Adestramento do Perceptrón e obtención dos pesos
+
+Mediante sección 2 do código [b_rede_perceptron](/Codigo_MATLAB/scripts/b_rede_perceptron.m)  realízase o adestramento de dúas redes, unha cos entradas normalizadas e outra sen normalizar. A exactitude da rede adestrada con datos sen normalizar alcanza o 77.04%, mentres que o valor obtido cos datos normalizados é do 86.18%, o que supon unha mellor de 8.78 puntos porcentuais. Aínda que é unha ganancia sustancial, utilizar datos normalizados supón traballar con decimais e polo tanto transformar todo a coma fixa. Neste caso, e para simplificar o sistema, traballarase con datos enteiros, xa que o obxetivo non é alcanzar o resultado máis óptimo.
+
+Os resultados da clasificación cos datos de test móstranse na matriz de confusión da Figura 2.3 Una nota de interese é o número 10 en realidade fai referencia ao díxito 0. Ademáis, é importante considerar que os datos de test non están balanceados, tal e como se ve na Figura 2.4, polo que a escala de cores non é de todo fiable. Igualmente, observase con claridade como o perceptrón ten maiores problemas para clasificar o número  8, clasificando o 9 como 8, 221 veces e o 0 como 8 ata 100 veces. A causa é clara, a similitude na disposición dos píxeles que conforman os díxitos.
