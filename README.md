@@ -49,6 +49,23 @@ As 70.00 mil móstras están divididas en dous grupos, 60.000 exemplos para o co
 
 <div align="center">
   <img src="img/taboa_1.png" width="700" alt="Arquivos base de datos MNIST" />
-  <p><b>Táboa 1: Arquivos base de datos MNIST</b></p>
+  <p><b>Táboa 1.1: Arquivos base de datos MNIST</b></p>
 </div>
+
+Antes de comezar a traballar cos datos de partida é necesario cargalos no Workspace de MATLAB e darlle formato. Mediante o código [a_formateado_dataset](/Codigo_MATLAB/scripts/a_formateado_dataset) os arquivos descargados son descomprimidos e reformateados en matrices multidimensionais de MATLAB obtendo a seguinte estructura:
+
+- Datos → nº de filas x nº de columnas x nº de mostras
+- Etiquetas → nº de etiquetas x nº de filas
+
+## 2. Adestramento do perceptrón
+
+O adestramento da rede para a identificación dos díxitos realizase en MATLAB. Para elo é necesario ter instalado a librería Deep Learning Toolbox.
+
+O problema proposto non ten unha solución lineal, é dicir, non é posible separar o conxunto de datos con unha única linea ou plano, polo que coas características propias dun perceptrón non é posible obter unha solución para a clasificación de tódolos datos nun número finito de iteracións. Esto débese en esencia á función de activación implementada polo perceptrón, de tipo lineal. 
+
+Aumentar o número de neuronas e capas ocultas pode axudar a diminuir o erro, pero o feito de utilizar a función de activación lineal en tódalas neuronas é o limitante para dar coa solución.
+
+Se ben é certo que para obter un bo resultado no recoñecemento de patróns recoméndanse outro tipo de redes neuronais, para maior simplicidade á hora de implementar a rede en VHDL usarase unha rede perceptrón.
+
+A Figura  2.1 corresponde cunha rede de perceptróns que contén unha única capa de S neuronas perceptronas conectadas a R entradas a través dun conxunto de pesos w_{i,j}.  Os índices de rede i e j indican que w_{i,j} é a forza (peso) da conexión dende a entrada j-ésima á neurona i-ésima.
 
