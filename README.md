@@ -185,7 +185,7 @@ A maiores impleméntase un contador ascendente que recorrerá tódalas direcció
   <p><b>Figura 3.2: Timing activación do incremento ADDR memoria ROM</b></p>
 </div>
 
-Nota: 2. GardaSumatorio, 3. IncrementoAddr
+Nota dos estados: 2. GardaSumatorio, 3. IncrementoAddr
 
 #### Cálculo de bits do módulo
 
