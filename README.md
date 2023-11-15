@@ -217,7 +217,7 @@ Para manter visible o resultado obtido pola neurona, e para que este non varíe 
 Na Figura 3.3 represéntanse tódolos bloques que conforman a unidade operativa da neurona e o seu interconexionado. Os sinais de entrada a este bloque, exceptuando o sinal de reloxo "CLK" e de reset "CLR", son as referidas ás entradas de control dos diferentes elementos. Todos estes sinais de mando son dirixidas dende a Unidade de Control, que se explicará en detalle no seguinte apartado.
 
 <div align="center">
-  <img src="img/ud_o_neurona.png" width="50%" alt="Bloques unidade operativa da neurona" />
+  <img src="img/ud_o_neurona.png" width="100%" alt="Bloques unidade operativa da neurona" />
   <p><b>Figura 3.3: Bloques unidade operativa da neurona</b></p>
 </div>
 
@@ -258,7 +258,7 @@ O seguinte paso para a comprobación das operacións da neurona é realizar unha
 Na simulación da Figura 3.5 obsérvanse os saltos entre os estados comentados no apartado anterior e as activacións das saídas correspondentes. Esta captura da simulación mostra a carga e procesado do último píxel máis o valor de bias.
 
 <div align="center">
-  <img src="img/tb_neurona.png" width="50%" alt="Simulación funcional da neurona" />
+  <img src="img/tb_neurona.png" width="90%" alt="Simulación funcional da neurona" />
   <p><b>Figura 3.5: Simulación funcional da neurona</b></p>
 </div>
 
