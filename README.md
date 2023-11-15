@@ -43,6 +43,15 @@ Os datos de partida obteñense da base de datos MNIST ([http://yann.lecun.com/ex
 <p align="center"><b>Figura 1.1: Representacións dos datos</b></p>
 </div>
 
+<p float="left">
+    <img src="img/mnist_dig_1.png" alt="Representación do nº 1" width="25%" style="margin-right: 50;"/>
+    <img src="img/mnist_dig_2.png" alt="Representación do nº 2" width="25%" style="margin-right: 50;"/>
+    <img src="img/mnist_dig_3.png" alt="Representación do nº 3" width="25%" />
+<p align="center"><b>Figura 1.1: Representacións dos datos</b></p>
+</p>
+<div align="center">
+  <p align="center"><b>Figura 1.1: Representacións dos datos</b></p>
+</div>
 
 As 70.00 mil móstras están divididas en dous grupos, 60.000 exemplos para o conxunto de adestramento e 10.000 para o conxunto de proba. Na seguinte Táboa 1.1, listanse os arquivos obtidos da base de datos MNIST:
 
@@ -70,7 +79,7 @@ Se ben é certo que para obter un bo resultado no recoñecemento de patróns rec
 A Figura  2.1 corresponde cunha rede de perceptróns que contén unha única capa de S neuronas perceptronas conectadas a R entradas a través dun conxunto de pesos w_{i,j}.  Os índices de rede i e j indican que w_{i,j} é a forza (peso) da conexión dende a entrada j-ésima á neurona i-ésima.
 
 <div align="center">
-  <img src="img/rede_perceptron.png" width="200" alt="Rede Perceptrón" />
+  <img src="img/rede_perceptron.png" width="300" alt="Rede Perceptrón" />
   <p><b>Figura 2.1: Rede Perceptrón</b></p>
 </div>
 
@@ -88,25 +97,11 @@ O paso previo ao adestramento da rede é acondicionar os datos conforme ao descr
 De este modo, as matrices de datos resultantes estarán dispostas de maneira que cada unha das imaxes conformarana tódolas filas (píxeles) dunha columna e a correspondente etiqueta estará na mesma columna da matriz de etiquetas. A saída correspondente da matriz de etiquetas está activa con un 1.
 
 <p float="left">
-  <img src="/img/imaxes_mnist.jpg" width="300" /><p><b>Figura 2.1: Rede Perceptrón</b></p>
-  <img src="/img/etiquetas_mnist.jpg" width="300" /><p><b>Figura 2.1: Rede Perceptrón</b></p>
+  <img src="/img/imaxes_mnist.jpg" width="300" /><p>
+  <img src="/img/etiquetas_mnist.jpg" width="300" /><p>
 </p>
 <div align="center">
   <p><b>Figura 2.2: Matrices de datos</b></p>
 </div>
 
-
-<p float="left">
-  <!-- Primera imagen con pie de imagen -->
-  <figure>
-    <img src="/img/imaxes_mnist.jpg" width="300" alt="Matriz de Imaxes"/>
-    <figcaption>Matriz de Imaxes</figcaption>
-  </figure>
-  
-  <!-- Segunda imagen con pie de imagen -->
-  <figure>
-    <img src="/img/etiquetas_mnist.jpg" width="300" alt="Matriz de Etiquetas"/>
-    <figcaption>Matriz de Etiquetas</figcaption>
-  </figure>
-</p>
 
