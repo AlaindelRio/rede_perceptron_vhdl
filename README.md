@@ -37,40 +37,11 @@ Os datos de partida obteñense da base de datos MNIST ([http://yann.lecun.com/ex
 
 
 <div align="center">
-    <img src="img/mnist_dig_1.png" alt="Representación do nº 1" width="25%" style="margin-right: 10px;"/>
-    <img src="img/mnist_dig_2.png" alt="Representación do nº 2" width="25%" style="margin-right: 10px;"/>
+    <img src="img/mnist_dig_1.png" alt="Representación do nº 1" width="25%" style="margin-right: 20px;"/>
+    <img src="img/mnist_dig_2.png" alt="Representación do nº 2" width="25%" style="margin-right: 20px;"/>
     <img src="img/mnist_dig_3.png" alt="Representación do nº 3" width="25%" />
 <p align="center"><b>1.1: Representacións dos datos</b></p>
 </div>
-
-
-<div align="center">
-    <img src="img/mnist_dig_1.png" alt="Representación do nº 1" width="25%" style="margin-right: 10px;"/><img src="img/mnist_dig_2.png" alt="Representación do nº 2" width="25%" style="margin-right: 10px;"/><img src="img/mnist_dig_3.png" alt="Representación do nº 3" width="25%" style="margin-right: 10px;"/>
-</div>
-<div align="center">
-    <b>Representación do nº 1</b> <b>Representación do nº 2</b> <b>Representación do nº 3</b>
-</div>
-
-<div align="center">
-    <div style="display: inline-block; margin-right: 10px; text-align: center;">
-        <img src="img/mnist_dig_1.png" alt="Representación do nº 1" width="20%"/>
-        <br>
-        <b>Representación do nº 1</b>
-    </div>
-
-    <div style="display: inline-block; margin-right: 10px; text-align: center;">
-        <img src="img/mnist_dig_2.png" alt="Representación do nº 2" width="20%"/>
-        <br>
-        <b>Representación do nº 2</b>
-    </div>
-
-    <div style="display: inline-block; text-align: center;">
-        <img src="img/mnist_dig_3.png" alt="Representación do nº 3" width="20%"/>
-        <br>
-        <b>Representación do nº 3</b>
-    </div>
-</div>
-
 
 
 As 70.00 mil móstras están divididas en dous grupos, 60.000 exemplos para o conxunto de adestramento e 10.000 para o conxunto de proba. Na seguinte Táboa 1.1, listanse os arquivos obtidos da base de datos MNIST:
