@@ -47,7 +47,7 @@ As 70.00 mil móstras están divididas en dous grupos, 60.000 exemplos para o co
 
 
 <div align="center">
-  <img src="img/taboa_1.png" width="500" alt="Arquivos base de datos MNIST" />
+  <img src="img/taboa_1.png" width="550" alt="Arquivos base de datos MNIST" />
   <p><b>Táboa 1.1: Arquivos base de datos MNIST</b></p>
 </div>
 
@@ -103,12 +103,12 @@ Mediante sección 2 do código [b_rede_perceptron](/Codigo_MATLAB/scripts/b_rede
 Os resultados da clasificación cos datos de test móstranse na matriz de confusión da Figura 2.3 Una nota de interese é o número 10 en realidade fai referencia ao díxito 0. Ademáis, é importante considerar que os datos de test non están balanceados, tal e como se ve na Figura 2.4, polo que a escala de cores non é de todo fiable. Igualmente, observase con claridade como o perceptrón ten maiores problemas para clasificar o número  8, clasificando o 9 como 8, 221 veces e o 0 como 8 ata 100 veces. A causa é clara, a similitude na disposición dos píxeles que conforman os díxitos.
 
 <div align="center">
-  <img src="img/matriz_confusion.png" width="50%" alt="Matríz de confusión" />
+  <img src="img/matriz_confusion.png" width="65%" alt="Matríz de confusión" />
   <p><b>Figura 2.3: Matríz de confusión</b></p>
 </div>
 
 <div align="center">
-  <img src="img/mostras_por_categoria.png" width="50%" alt="Número de mostras por etiqueta" />
+  <img src="img/mostras_por_categoria.png" width="65%" alt="Número de mostras por etiqueta" />
   <p><b>Figura 2.4: Número de mostras por etiqueta</b></p>
 </div>
 
