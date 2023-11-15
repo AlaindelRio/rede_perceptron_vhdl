@@ -92,3 +92,17 @@ De este modo, as matrices de datos resultantes estarán dispostas de maneira que
   <img src="/img/etiquetas_mnist.jpg" width="400" /> 
 </p>
 
+<p float="left">
+  <!-- Primera imagen con pie de imagen -->
+  <figure>
+    <img src="/img/imaxes_mnist.jpg" width="400" alt="Matriz de Imaxes"/>
+    <figcaption>Matriz de Imaxes</figcaption>
+  </figure>
+  
+  <!-- Segunda imagen con pie de imagen -->
+  <figure>
+    <img src="/img/etiquetas_mnist.jpg" width="400" alt="Matriz de Etiquetas"/>
+    <figcaption>Matriz de Etiquetas</figcaption>
+  </figure>
+</p>
+
