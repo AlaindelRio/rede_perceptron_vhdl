@@ -199,9 +199,9 @@ Este bloque é o encargado de realizar a suma da entrada ponderada actual coa su
 
 Para o cálculo de bits necesarios da saída do sumatorio teranse en conta os valores máximos de cada un dos sinais involucrados. Entón o valor máximo a representar en valor absoluto ven dado pola seguinte ecuación:
 
-(2^8 - 1) * (2^(17-1)) * 784 + 1 * (2^(17-1)) = 13102022656
-
-log2(13102022656) = 33,609
+<div align="center">
+  <img src="img/ecuacions.png" width="50%" alt="Número de bits sumador acumulador" />
+</div>
 
 Redondeando ao maior o resultado anterior, obteñense 34 bits para representar o valor máximo. Contando que o número represéntase en Ca2 son necesarios un total de 35 bits.
 
@@ -217,6 +217,6 @@ Para manter visible o resultado obtido pola neurona, e para que este non varíe 
 Na Figura 3.3 represéntanse tódolos bloques que conforman a unidade operativa da neurona e o seu interconexionado. Os sinais de entrada a este bloque, exceptuando o sinal de reloxo ``CLK'' e de reset ``CLR'', son as referidas ás entradas de control dos diferentes elementos. Todos estes sinais de mando son dirixidas dende a Unidade de Control, que se explicará en detalle no seguinte apartado.
 
 <div align="center">
-  <img src="img/fluxograma_perceptron.png" width="50%" alt="Timing activación do incremento ADDR memoria ROM" />
-  <p><b>Figura 3.3: Timing activación do incremento ADDR memoria ROM</b></p>
+  <img src="img/ud_o_neurona.png" width="50%" alt="Bloques unidade operativa da neurona" />
+  <p><b>Figura 3.3: Bloques unidade operativa da neurona</b></p>
 </div>
