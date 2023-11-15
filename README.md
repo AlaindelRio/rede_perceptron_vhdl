@@ -7,7 +7,7 @@ Utilízase o coñecido conxunto de datos MNIST, un estándar no mundo da aprendi
 Entón, tal e como se comentaba ao inicio do apartado, o obxectivo deste caso práctico é enviar imaxes de díxitos dende o ordenador á FPGA para que esta realice a clasificación do número. O número que considere que representa a imaxe verase reflexado na batería de leds da FPGA. Un esquema xeral do que se levará a cabo móstrase na Figura 1.
 
 <div align="center">
-  <img src="img/esquema_xeral.png" width="700" alt="Esquema xeral do exemplo de implementación da rede" />
+  <img src="img/esquema_xeral.png" width="70%" alt="Esquema xeral do exemplo de implementación da rede" />
   <p><b>Figura 1: Esquema xeral da aplicación</b></p>
 </div>
 
@@ -37,9 +37,9 @@ Os datos de partida obteñense da base de datos MNIST ([http://yann.lecun.com/ex
 
 
 <div align="center">
-    <img src="img/mnist_dig_1.png" alt="Representación do nº 1" width="20%" style="margin-right: 50;"/>
-    <img src="img/mnist_dig_2.png" alt="Representación do nº 2" width="20%" style="margin-right: 50;"/>
-    <img src="img/mnist_dig_3.png" alt="Representación do nº 3" width="20%" />
+    <img src="img/mnist_dig_1.png" alt="Representación do nº 1" width="25%" style="margin-right: 50;"/>
+    <img src="img/mnist_dig_2.png" alt="Representación do nº 2" width="25%" style="margin-right: 50;"/>
+    <img src="img/mnist_dig_3.png" alt="Representación do nº 3" width="25%" />
 <p align="center"><b>Figura 1.1: Representacións dos datos</b></p>
 </div>
 
