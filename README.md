@@ -37,8 +37,8 @@ Os datos de partida obteñense da base de datos MNIST ([http://yann.lecun.com/ex
 
 
 <div align="center">
-    <img src="img/mnist_dig_1.png" alt="Representación do nº 1" width="25%" style="margin-right: 50px;"/>
-    <img src="img/mnist_dig_2.png" alt="Representación do nº 2" width="25%" style="margin-right: 50px;"/>
+    <img src="img/mnist_dig_1.png" alt="Representación do nº 1" width="25%" style="margin-right: 50;"/>
+    <img src="img/mnist_dig_2.png" alt="Representación do nº 2" width="25%" style="margin-right: 50;"/>
     <img src="img/mnist_dig_3.png" alt="Representación do nº 3" width="25%" />
 <p align="center"><b>1.1: Representacións dos datos</b></p>
 </div>
