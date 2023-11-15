@@ -37,9 +37,9 @@ Os datos de partida obteñense da base de datos MNIST ([http://yann.lecun.com/ex
 
 
 <div align="center">
-    <img src="img/mnist_dig_1.png" alt="Representación do nº 1" width="25%" style="margin-right: 50;"/>
-    <img src="img/mnist_dig_2.png" alt="Representación do nº 2" width="25%" style="margin-right: 50;"/>
-    <img src="img/mnist_dig_3.png" alt="Representación do nº 3" width="25%" />
+    <img src="img/mnist_dig_1.png" alt="Representación do nº 1" width="20%" style="margin-right: 50;"/>
+    <img src="img/mnist_dig_2.png" alt="Representación do nº 2" width="20%" style="margin-right: 50;"/>
+    <img src="img/mnist_dig_3.png" alt="Representación do nº 3" width="20%" />
 <p align="center"><b>Figura 1.1: Representacións dos datos</b></p>
 </div>
 
@@ -86,20 +86,9 @@ O paso previo ao adestramento da rede é acondicionar os datos conforme ao descr
 
 De este modo, as matrices de datos resultantes estarán dispostas de maneira que cada unha das imaxes conformarana tódolas filas (píxeles) dunha columna e a correspondente etiqueta estará na mesma columna da matriz de etiquetas. A saída correspondente da matriz de etiquetas está activa con un 1. Na Figura 2.2 represéntase á esquerda a matriz de imaxes e á dereita a matriz de etiquetas.
 
-<p float="center">
-  <img src="/img/imaxes_mnist.jpg" width="250" /><p>
-  <img src="/img/etiquetas_mnist.jpg" width="250" /><p>
-</p>
-
 <div align="center">
-  <img src="/img/imaxes_mnist.jpg" width="250" /><p>
-  <img src="/img/etiquetas_mnist.jpg" width="250" /><p>
-  <p align="center"><b>Figura 2.2: Matriz dos datos</b></p>
-</div>
-
-<div align="center">
-    <img src="img/imaxes_mnist.jpg" alt="Matriz de imaxes" width="45%" style="margin-right: 50;"/>
-    <img src="img/etiquetas_mnist.jpg" alt="Matriz de etiquetas" width="45%" />
+    <img src="img/imaxes_mnist.jpg" alt="Matriz de imaxes" width="40%" style="margin-right: 50;"/>
+    <img src="img/etiquetas_mnist.jpg" alt="Matriz de etiquetas" width="40%" />
 <p align="center"><b>Figura 2.2: Matriz dos datos</b></p>
 </div>
 
