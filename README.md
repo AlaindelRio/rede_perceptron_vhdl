@@ -403,6 +403,8 @@ No caso de querer seleccionar outra saída é necesario volver a facer o ciclo a
 
 Para o exemplo da Figura 6.2, seleccionouse a mostra 2 do conxunto de datos de test, que neste caso corresponde co díxito 2. Nas imaxes pode verse como o led LD2 está acendido, o que significa que a clasificación foi levada con éxito. Na imaxe da esquerda pode identificarse o bit de signo da saída da neurna seleccionada, a 0, e o número ``FCE95C'' en hexadecimal. Que o número sexa negativo é bo sinal, pero para confirmar que tódolos cálculos son correctos necesítase a saída real desta mesma neurona. A sección 2 do código [d_probas_funcionais](/Codigo_MATLAB/scripts/d_probas_funcionais.m) proporciona dúas matrices cos valores reais das operacións de multiplicación e sumatorio para cada una das 785 iteracións. O resultado da matríz de MATLAB *Mult_sum_hex* é exactamente o mesmo que o marcado polo display, confirmando a boa execución do perceptrón na FPGA.
 
+No caso da imaxe da dereita da Figura 6.2 estase visualizando a saída da neurona 2, polo que o seu valor debería (e neste caso é) ser positivo xa que se está a identificar o díxito 2.
+
 <div align="center">
     <img src="img/resultado_final_0.jpg" alt="Saída neurona 0" width="40%" style="margin-right: 50;"/>
     <img src="img/resultado_final_1.jpg" alt="Saída neurona 2" width="40%" />
