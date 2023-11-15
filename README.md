@@ -15,7 +15,7 @@ Entón, tal e como se comentaba ao inicio do apartado, o obxectivo deste caso pr
 ## Hardware e Ferramentas Utilizadas
 
 - **Nexys 4 DDR**: O hardware seleccionado é a placa de desenvolvemento Nexys 4 DDR, que incorpora una FPGA Artix 7.
-- **MATLAB**: Utilizase o software MATLAB para adestrar a rede perceptrón e obter os seus pesos.
+- **MATLAB**: Utilizase o software MATLAB para adestrar a rede perceptrón, obter os seus pesos, o testeo do funcionamento e o envío das imaxes á FPGA.
 - **Vivado**: A implementación hardware da rede é programada en VHDL mediante Vivado.
 
 ## Puntos a tratas
