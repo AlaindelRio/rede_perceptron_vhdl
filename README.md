@@ -18,7 +18,7 @@ Entón, tal e como se comentaba ao inicio do apartado, o obxectivo deste caso pr
 - **MATLAB**: Utilizase o software MATLAB para adestrar a rede perceptrón, obter os seus pesos, o testeo do funcionamento e o envío das imaxes á FPGA.
 - **Vivado**: A implementación hardware da rede é programada en VHDL mediante Vivado.
 
-## Puntos a tratas
+## Puntos a tratar
 
 A división dos puntos será a seguinte:
 
