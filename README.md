@@ -70,7 +70,7 @@ Se ben é certo que para obter un bo resultado no recoñecemento de patróns rec
 A Figura  2.1 corresponde cunha rede de perceptróns que contén unha única capa de S neuronas perceptronas conectadas a R entradas a través dun conxunto de pesos w_{i,j}.  Os índices de rede i e j indican que w_{i,j} é a forza (peso) da conexión dende a entrada j-ésima á neurona i-ésima.
 
 <div align="center">
-  <img src="img/rede_perceptron.png" width="700" alt="Rede Perceptrón" />
+  <img src="img/rede_perceptron.png" width="400" alt="Rede Perceptrón" />
   <p><b>Figura 2.1: Rede Perceptrón</b></p>
 </div>
 
@@ -78,7 +78,7 @@ A Figura  2.1 corresponde cunha rede de perceptróns que contén unha única cap
 
 Partindo do punto anterior e sabendo que cada unha das imáxenes confórmana 784 píxeles con 8 bits/píxel de información plantéxase utilizar cada un dos píxeles como entrada á rede. O número de neuronas da capa de saída será de 10, cada unha delas identificará un dos díxitos, do 0 ao 9.
 
-O paso previo ao adestramento da rede é acondicionar os datos conforme ao descrito na documentación da función train de MATLAB. A sección 1 do código [b_rede_perceptron](/Codigo_MATLAB/scripts/b_rede_perceptron) realiza o seguinte cambio nas matrices de datos:
+O paso previo ao adestramento da rede é acondicionar os datos conforme ao descrito na documentación da función train de MATLAB. A sección 1 do código [b_rede_perceptron](/Codigo_MATLAB/scripts/b_rede_perceptron.m) realiza o seguinte cambio nas matrices de datos:
 
 - XTrain (28x28x60000) → DatosA (784x60000).
 - YTrain (60000x1) → EtiquetasA (10x60000).
@@ -86,3 +86,9 @@ O paso previo ao adestramento da rede é acondicionar os datos conforme ao descr
 - YTest (10000x1) → EtiquetasT (10x10000).
 
 De este modo, as matrices de datos resultantes estarán dispostas de maneira que cada unha das imaxes conformarana tódolas filas (píxeles) dunha columna e a correspondente etiqueta estará na mesma columna da matriz de etiquetas. A saída correspondente da matriz de etiquetas está activa con un 1.
+
+<p float="left">
+  <img src="/img/imaxes_mnist.jpg" width="400" />
+  <img src="/img/etiquetas_mnist.jpg" width="400" /> 
+</p>
+
