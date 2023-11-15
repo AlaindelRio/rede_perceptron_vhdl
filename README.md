@@ -11,12 +11,6 @@ Entón, tal e como se comentaba ao inicio do apartado, o obxectivo deste caso pr
   <p><b>1: Esquema xeral da aplicación</b></p>
 </div>
 
-<div align="center">
-    <img src="ruta/a/la/imagen.jpg" alt="Texto Alternativo" width="300"/>
-    <p><b>Título de la Imagen</b></p>
-    <p>Descripción de la imagen.</p>
-</div>
-
 
 ## Hardware e Ferramentas Utilizadas
 
@@ -37,4 +31,23 @@ A división dos puntos será a seguinte:
 
 Por último, comentar que non se trata de realizar un clasificador no que a precisión sexa cercana ao 100%, se non de verificar, mediante un exemplo simple, que se pode levar a cabo un sistema intelixente que implique a utilización da FPGA.
 
+## 1. Data Set
+
+Os datos de partida obteñense da base de datos MNIST ([http://yann.lecun.com/exdb/mnist/](http://yann.lecun.com/exdb/mnist/)), considerada o "hola mundo" do aprendizaxe automático. Consta de 70.000 "imaxes" de díxitos numéricos escritos a man, en escala de grises e cunhas dimensións de 28x28x1 píxeles. Cada un dos 784 píxeles que conforman unha "imaxe" conteñen 8 bits de información. Na Figura 1.1 represéntanse tres díxitos coa escala de cores á súa esquerda, onde cada píxel pode tomar 256 valores distintos, comezando co 0 para os píxeles brancos e finalizando no 255 para o negro puro.
+
+<div align="center" style="display: flex; justify-content: center; align-items: center;">
+    <div style="flex: 1; margin: 5px;">
+        <img src="img/mnist_dig_1.png" alt="Representación do nº 1" style="width: 100%;"/>
+        <p><b>Representación do nº 1</b></p>
+    </div>
+    <div style="flex: 1; margin: 5px;">
+        <img src="img/mnist_dig_2.png" alt="Representación do nº 2" style="width: 100%;"/>
+        <p><b>Representación do nº 2</b></p>
+    </div>
+    <div style="flex: 1; margin: 5px;">
+        <img src="img/mnist_dig_3.png" alt="Representación do nº 3" style="width: 100%;"/>
+        <p><b>Representación do nº 3</b></p>
+    </div>
+</div>
+<p align="center"><b>Representacións dos datos</b></p>
 
