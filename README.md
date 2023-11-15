@@ -220,3 +220,44 @@ Na Figura 3.3 represéntanse tódolos bloques que conforman a unidade operativa 
   <img src="img/ud_o_neurona.png" width="50%" alt="Bloques unidade operativa da neurona" />
   <p><b>Figura 3.3: Bloques unidade operativa da neurona</b></p>
 </div>
+
+
+### 3.5 Unidade de Control Neurona
+
+A unidade de uontrol da neurona é a encargada de realizar o control dos bloques da Unidade Operativa xestionando os tempos. É unha máquina de estados que se recorre secuencialmente polas etapas da Figura 3.4 e realiza diferentes accións.
+
+
+<div align="center">
+  <img src="img/ud_c_neurona.jpg" width="50%" alt="Diagrama de estados Unidade de Control da neurona" />
+  <p><b>Figura 3.4: Diagrama de estados Unidade de Control da neurona</b></p>
+</div>
+
+- **EsperaPixel:** Estado inicial de espera. Neste estado realizase a espera da trama dos 8 bits do píxel procedente do módulo de comunicación explicado no apartado anterior. A entrada *Fin_Recepcion*, procedente do bloque de comunicación, indica se a transmisión dos bits que conforman o píxel están dispoñibles para poder ser utilizados. Se este sinal está activo pásase ao seguinte estado.
+
+- **GardaSumatorio:** Esta etapa xestiona a carga do rexistro encargado de acumular o sumatorio. O sinal involucrado é *Load_S*. É necesario que as operacións de multiplicación e suma se leven a cabo antes de realizar a carga no rexistro do valor de saída do sumador. Para esta operación hai un marxe de 40 ns, o tempo transcurrido entre o acceso ao píxel de entrada e a carga no rexistro. Unha vez acumulado o valor do sumatorio, pásase á seguinte etapa ou estado.
+
+- **IncrementoAddr:** Ten lugar a activación do sinal de control *Inc_ADDR*, habilitando o incremento do contador ascendente da dirección de memoria ROM. De este modo a entrada de pesos do multiplicador actualizase e queda a espera da chegada do novo valor do píxel. O contador tamén dispón dunha saída de disparo, chamada *Ultimo_pixel*, a cal indica que o contador alcanzou o valor 783. Unha vez alcanzado este valor, logo de pasar polos tres estados mencionados 783 veces, repítese o ciclo unha última vez antes de pasar ao estado seguinte.
+
+- **SeleccionBias:** Actívase o sinal *Select_Bias* para escoller no multiplexor o valor do bias en lugar da entrada do píxel. Tras un ciclo de reloxo pásase á etapa seguinte.
+
+- **GardaBias:** Mantén activo o *Select_Bias* e tamén o habilita *Load_S* para realizar a carga do valor do bias polo seu peso no rexistro do sumatorio.
+
+- **CargaSaida:** Unha vez completadas tódalas operacións, neste estado actívase o rexistro de saída da función de activación *Load_Z* e de novo incrementase o contador de direccionamento da ROM para forzar o seu reseteo. No caso de que o díxito a identificar sexa o que corresponde a esta neurona, a saída *Activación* porase a nivel alto.
+
+- **ResetSumatorio:** Por último, antes de volver ao inicio, nesta fase restablécese o rexistro encargado de gardar o valor do sumatorio.
+
+
+### 3.6 Comprobación do funcionamento
+
+Neste apartado comprobarase mediante un test bench o correcto funcionamento da neurona. Para elo instanciase unha memoria tipo ROM obtida directamente dos exemplos do "Lenguages Template" de Vivado. Na ROM insertaranse mediante código tódolos píxeles dunha das imaxes pertencentes ao conxunto de proba. 
+
+Para obter de forma rápida os valores de cada un dos píxeles que conforman a imaxe seleccionada realízase a sección 1 do código [b_rede_perceptron](/Codigo_MATLAB/scripts/b_rede_perceptron.m). De este modo imprímense por pantalla os valores, en formato hexadecimal, de cada un dos píxeles. O conxunto de datos cópiase no módulo creado en VHDL para realizar o test bench. Deste xeito inicialízanse tódolas direccións de memoria do módulo ROM externo cun caso real, simulando a entrada dos píxeles na rede.
+
+O seguinte paso para a comprobación das operacións da neurona é realizar unha matriz en MATLAB na cal se van a almacean tódolos valores que toman os bloques de  multiplicación e sumatorio a medida que se incrementan as direccións de memoria. O algoritmo da sección 2 do código [b_rede_perceptron](/Codigo_MATLAB/scripts/b_rede_perceptron.m) xera unha matriz de 2x785 no cal a fila un toma os valores da saída do multiplicador e a fila dous a saída do sumatorio.
+
+Na simulación da Figura 3.5 obsérvanse os saltos entre os estados comentados no apartado anterior e as activacións das saídas correspondentes. Esta captura da simulación mostra a carga e procesado do último píxel máis o valor de bias.
+
+<div align="center">
+  <img src="img/ud_c_neurona.jpg" width="50%" alt="Simulación funcional da neurona" />
+  <p><b>Figura 3.5: Simulación funcional da neurona</b></p>
+</div>
