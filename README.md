@@ -55,13 +55,12 @@ Os datos de partida obteñense da base de datos MNIST ([http://yann.lecun.com/ex
 
 As 70.00 mil móstras están divididas en dous grupos, 60.000 exemplos para o conxunto de adestramento e 10.000 para o conxunto de proba. Na seguinte Táboa 1.1, listanse os arquivos obtidos da base de datos MNIST:
 
-<div align="center">
+
 | Nome do arquivo             | Mostras | Tipo    | Conxunto              |
 |-----------------------------|---------|---------|-----------------------|
 | train-images-idx3-ubyte.gz  | 60 000  | dato    | conxunto de adestramento |
 | train-labels-idx1-ubyte.gz  | 60 000  | etiqueta| conxunto de adestramento |
 | t10k-images-idx3-ubyte.gz   | 10 000  | dato    | conxunto de proba     |
 | t10k-labels-idx1-ubyte.gz   | 10 000  | etiqueta| conxunto de proba     |
-</div>
 
 
