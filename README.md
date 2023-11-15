@@ -90,9 +90,7 @@ De este modo, as matrices de datos resultantes estarán dispostas de maneira que
   <img src="/img/imaxes_mnist.jpg" width="300" /><p>
   <img src="/img/etiquetas_mnist.jpg" width="300" /><p>
 </p>
-<div align="center">
-  <p><b>Figura 2.2: Matrices de datos</b></p>
-</div>
+
 
 A maiores realízase un normalizado dos datos para facer unha comparativa da precisión da rede adestrada cos datos normalizados e sen normalizar.
 
