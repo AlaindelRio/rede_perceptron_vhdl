@@ -101,3 +101,44 @@ A normalización é un paso importante no preprocesamento de datos para moitos a
 Mediante sección 2 do código [b_rede_perceptron](/Codigo_MATLAB/scripts/b_rede_perceptron.m)  realízase o adestramento de dúas redes, unha cos entradas normalizadas e outra sen normalizar. A exactitude da rede adestrada con datos sen normalizar alcanza o 77.04%, mentres que o valor obtido cos datos normalizados é do 86.18%, o que supon unha mellor de 8.78 puntos porcentuais. Aínda que é unha ganancia sustancial, utilizar datos normalizados supón traballar con decimais e polo tanto transformar todo a coma fixa. Neste caso, e para simplificar o sistema, traballarase con datos enteiros, xa que o obxetivo non é alcanzar o resultado máis óptimo.
 
 Os resultados da clasificación cos datos de test móstranse na matriz de confusión da Figura 2.3 Una nota de interese é o número 10 en realidade fai referencia ao díxito 0. Ademáis, é importante considerar que os datos de test non están balanceados, tal e como se ve na Figura 2.4, polo que a escala de cores non é de todo fiable. Igualmente, observase con claridade como o perceptrón ten maiores problemas para clasificar o número  8, clasificando o 9 como 8, 221 veces e o 0 como 8 ata 100 veces. A causa é clara, a similitude na disposición dos píxeles que conforman os díxitos.
+
+<div align="center">
+  <img src="img/matriz_confusion.png" width="50%" alt="Matríz de confusión" />
+  <p><b>Figura 2.3: Matríz de confusión</b></p>
+</div>
+
+<div align="center">
+  <img src="img/mostras_por_categoria.png" width="50%" alt="Número de mostras por etiqueta" />
+  <p><b>Figura 2.4: Número de mostras por etiqueta</b></p>
+</div>
+
+Mediante o algorito de adestramento obteñense os pesos da rede para 10 iteracións. Tóda a información xerada durante o adestramento do perceptrón está contida no obxeto *rede*.
+
+A matriz de pesos *pesos_rede* e *pesos_bias* son obtidas da *rede* mediante as primeiras lineas da sección 5 do código [b_rede_perceptron](/Codigo_MATLAB/scripts/b_rede_perceptron.m). Por unha banda, a matriz *pesos_rede* contén tódolos pesos correspondentes ás conexións das 784 entradas coas 10 neuronas e a matriz *pesos_bias* os correspondentes as bias de cada una das neuronas. Os valores obtidos son números enteiros con signo, polo tanto, ao non conter números decimais, non habrá pérdida de información no momento da conversión a formato binario para xerar as memorias.
+
+
+### 2.3 Xeración do arquivo .COE
+
+Para implementar as memorias de pesos é necesario coñecer o número de bits do seu contido. Para isto, extráese o valor máximo en valor absoluto dos pesos, e contabilízase o número de bits necesarios para a súa representación. Ao traballar con números con signo sumarase un máis ao valor obtido para a representación en complemento a dous.
+
+Tendo en conta que a optimización de recursos é intrínseco nunha FPGA, a utilización de buses de datos da menor dimensión posible na memorias de pesos diminuirá significativamente o uso de recursos inecesarios. Esto cobra maior sentido no apartado no cal se calcula o número de bits necesarios en cada unha das operacións do algoritmo do perceptrón.
+
+Unha maneira de solventar esto e traballar con datos de punto fixo con signo e sen parte decimal. De este modo, poderase representar tódolos valores co número de bits que conveña.
+
+Neste caso en concreto, os número máximo e mínimo en decimal son 21347 e -33252 respectivamente. En valor absoluto, o número maior é o 33252, polo que serán necesarios 17 bits para representalo en complemento a dous.
+
+O IP Core usado para almacenar os pesos é o ``Block Memory Generator'', o cal admite inicialización da memoria mediante un arquivo de coeficientes de memoria (COE). O arquivo COE especifica o contido de cada ubicación de memoria. Este formato de arquivo para inicializar as memorias ven definido na documentación do fabricante da FPGA ([http://yann.lecun.com/exdb/mnist/](http://yann.lecun.com/exdb/mnist/)).
+
+Un COE é un arquivo de texto que especifica dous parámetros.
+
+- **memory_initialization_radix**: O valor do formato de almacenamento dos datos. As opcións son 2, 10 ou 16. Neste caso traballarase con números en binario, primeira opción.
+- **memory_initialization_vector**: Define o contido de cada celda da memoria. Estes coeficientes poden ir separados por un espazo, unha coma ou colocando un valor en cada liña con un salto de liña.
+
+Baseándose no formato especificado, a sección 6 do código [b_rede_perceptron](/Codigo_MATLAB/scripts/b_rede_perceptron.m) realiza os cálculos para obter o número de bits necesarios para representar tódolos números en Ca2 e xera de forma automática tódolos arquivos .COE para cada unha das memorias de pesos das neuronas. En total son 10 arquivos, un por neurona, con 785 pesos, incluíndo o bias.
+
+O resultado é o da Figura 2.5, no cal o texto iníciase co encabezado citado e cada número separado por comas é o contido desa posición de memoria. Pódese ver como as primeiras posicións, ata chegar á novena, están a cero. Esto significa que os píxeles desas posicións non aportan información valiosa.
+
+<div align="center">
+  <img src="img/mostras_por_categoria.png" width="50%" alt="Arquivo COE de memoria" />
+  <p><b>Figura 2.5: Arquivo COE de memoria</b></p>
+</div>
