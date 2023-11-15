@@ -291,7 +291,7 @@ O protocolo designado para este caso é o UART, Universal Asynchronous Receiver-
 A placa de desenrolo Nexys 4 DDR inclúe o integrado FTDI FT2232HQ, encargado de realizar unha ponte USB-UART entre o conector Micro-USB e os pin encargados da comunicación UART na FPGA.
 
 <div align="center">
-  <img src="img/modulo_usb_uart.png" width="50%" alt="Conexionado entre FT2232HQ e Artix-7" />
+  <img src="img/modulo_usb_uart.png" width="20%" alt="Conexionado entre FT2232HQ e Artix-7" />
   <p><b>Figura 5.1: Conexionado entre FT2232HQ e Artix-7</b></p>
 </div>
 
@@ -305,7 +305,7 @@ A trama empregada é a coñecida como 8N1, a cal contén un bit de start, 8 bits
 
 
 <div align="center">
-  <img src="img/bits_uart.png" width="50%" alt="Secuencia de transmisión mediante protocolo UART" />
+  <img src="img/bits_uart.png" width="60%" alt="Secuencia de transmisión mediante protocolo UART" />
   <p><b>Figura 5.2: Secuencia de transmisión mediante protocolo UART</b></p>
 </div>
 
@@ -327,7 +327,7 @@ A unidade Operativa do módulo UART conformano os bloques da Figura 5.3 Cada un 
 
 
 <div align="center">
-  <img src="img/ud_o_uart.png" width="50%" alt="Unidade Operativa do módulo UART" />
+  <img src="img/ud_o_uart.png" width="80%" alt="Unidade Operativa do módulo UART" />
   <p><b>Figura 5.3: Unidade Operativa do módulo UART</b></p>
 </div>
 
