@@ -35,29 +35,33 @@ Por último, comentar que non se trata de realizar un clasificador no que a prec
 
 Os datos de partida obteñense da base de datos MNIST ([http://yann.lecun.com/exdb/mnist/](http://yann.lecun.com/exdb/mnist/)), considerada o "hola mundo" do aprendizaxe automático. Consta de 70.000 "imaxes" de díxitos numéricos escritos a man, en escala de grises e cunhas dimensións de 28x28x1 píxeles. Cada un dos 784 píxeles que conforman unha "imaxe" conteñen 8 bits de información. Na Figura 1.1 represéntanse tres díxitos coa escala de cores á súa esquerda, onde cada píxel pode tomar 256 valores distintos, comezando co 0 para os píxeles brancos e finalizando no 255 para o negro puro.
 
-<div align="center" style="display: flex; justify-content: center; align-items: center;">
-    <div style="flex: 1; margin: 5px;">
-        <img src="img/mnist_dig_1.png" alt="Representación do nº 1" style="width: 20%;"/>
-        <p><b>Representación do nº 1</b></p>
-    </div>
-    <div style="flex: 1; margin: 5px;">
-        <img src="img/mnist_dig_2.png" alt="Representación do nº 2" style="width: 20%;"/>
-        <p><b>Representación do nº 2</b></p>
-    </div>
-    <div style="flex: 1; margin: 5px;">
-        <img src="img/mnist_dig_3.png" alt="Representación do nº 3" style="width: 20%;"/>
-        <p><b>Representación do nº 3</b></p>
-    </div>
-</div>
 <p align="center"><b>1.1: Representacións dos datos</b></p>
+<table align="center">
+    <tr>
+        <td align="center">
+            <img src="img/mnist_dig_1.png" alt="Representación do nº 1" width="20%"/>
+            <br><b>Representación do nº 1</b>
+        </td>
+        <td align="center">
+            <img src="img/mnist_dig_2.png" alt="Representación do nº 2" width="20%"/>
+            <br><b>Representación do nº 2</b>
+        </td>
+        <td align="center">
+            <img src="img/mnist_dig_3.png" alt="Representación do nº 3" width="20%"/>
+            <br><b>Representación do nº 3</b>
+        </td>
+    </tr>
+</table>
 
 As 70.00 mil móstras están divididas en dous grupos, 60.000 exemplos para o conxunto de adestramento e 10.000 para o conxunto de proba. Na seguinte Táboa 1.1, listanse os arquivos obtidos da base de datos MNIST:
 
+<div align="center">
 | Nome do arquivo             | Mostras | Tipo    | Conxunto              |
 |-----------------------------|---------|---------|-----------------------|
 | train-images-idx3-ubyte.gz  | 60 000  | dato    | conxunto de adestramento |
 | train-labels-idx1-ubyte.gz  | 60 000  | etiqueta| conxunto de adestramento |
 | t10k-images-idx3-ubyte.gz   | 10 000  | dato    | conxunto de proba     |
 | t10k-labels-idx1-ubyte.gz   | 10 000  | etiqueta| conxunto de proba     |
+</div>
 
 
