@@ -365,4 +365,26 @@ Coa variable *imaxe* seleccionase una das 10 000 mostras para ser enviadas a tra
 
 Para realizar a implementación final é necesario ter un modo de testear que tódalas operacións levadas a cabo pola FPGA fanse correctamente. En primer lugar, establécese unha conexión entre a batería de leds e as saídas de cada neurona, correspondendo cada un dos leds, do 0 ao 9, cos díxitos a identificar. A maiores, para visualizar que as operacións internas son as correctas, implementase un módulo para representar no display de 7 segmentos os resultados das multiplicacións.
 
+## 6.1 Implementación de display
 
+O módulo ten por obxectivo visualizar o resultado final obtido no rexistro de almacenamento da suma acumulada. Con este valor e co código [d_probas_funcionais](/Codigo_MATLAB/scripts/d_probas_funcionais.m), pódese realizar una comparativa e testear o funcionamento.
+
+Para levar a cabo esta labor son imprescindibles os catro módulos da Firgura 6.1.
+
+
+<div align="center">
+  <img src="img/ud_o_display.png" width="50%" alt="Bloque display" />
+  <p><b>Figura 6.1: Bloque display</b></p>
+</div>
+
+- **decod7seg:** Contén o código para a xestión da representación dos díxitos.
+- **div_244Hz:** Divisor de frecuencia necesario para visualizar os díxitos do display de maneira fixa, sen parpadeos. Con tasas de refresco elevadas, o ollo humano non percibe as transicións entre o apagado e encendido dos leds.
+- **Sig_a_abs:** Obtén o valor absoluto do número de entrada e extrae os 32 bits menos significativos. Isto é porque o bus de entrada ao decodificador é dun máximo de 32 bits. En realidad, eliminar os 3 bits menos significativos non cambiará nada na inmensa maioría dos casos, xa que o dimensionamento dos vectores está pensado para casos extremos nos que os valores de entrada son o máximo e os pesos tamén.
+- **Rex_Suma_Final:** É o rexistro do valor final obtido nas operacións de multiplicación e suma. Podríase decir que é unha extensión do rexistro da suma acumulada, so que unha vez finalizadas as operacións, este non se resetea. So cambia de valor cando se sobreescribe. O bit de signo tamén é rexistrado, e no caso de ser un número negativo encenderase o LD15 da placa.
+
+A maiores, engadiuse un multiplexor para seleccionar que saída dos rexistros da suma acumulada querse visualizar. Na táboa mostranse as configuracións:
+
+<div align="center">
+  <img src="img/taboa_2.png" width="50%" alt="Selector visualización display" />
+  <p><b>Táboa 6.1: Selector visualización display</b></p>
+</div>
