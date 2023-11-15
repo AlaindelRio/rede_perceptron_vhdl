@@ -174,11 +174,11 @@ Como xa se mencionou, na ROM tamén está almaceado o peso da entrada bias. A en
 
 #### 3.1.1 Entrada de pesos
 
-A segunda entrada ao bloque multiplicador é a saída da memoria ROM. Incórporase unha memoria ROM de tipo ``Single-port ROM'' a través do ``Block Memory Generator''.
+A segunda entrada ao bloque multiplicador é a saída da memoria ROM. Incórporase unha memoria ROM de tipo "Single-port ROM" a través do "Block Memory Generator".
 
-Para que a latencia sexa a mínima, un ciclo de reloxo dende un cambio na entrada de direccionamento, non se incorporan rexistros de saída na ``Memory Core'' nin na ``Memory Primitives''. Igualmente, o bloque de memoria estará sempre activo (EN = `1'), simplificando a tarea de control da memoria. As posibles configuracións e características veñen definidas na documentación ([https://docs.xilinx.com/v/u/en-US/pg058-blk-mem-gen](https://docs.xilinx.com/v/u/en-US/pg058-blk-mem-gen)).
+Para que a latencia sexa a mínima, un ciclo de reloxo dende un cambio na entrada de direccionamento, non se incorporan rexistros de saída na "Memory Core" nin na "Memory Primitives". Igualmente, o bloque de memoria estará sempre activo (EN = '1'), simplificando a tarea de control da memoria. As posibles configuracións e características veñen definidas na documentación ([https://docs.xilinx.com/v/u/en-US/pg058-blk-mem-gen](https://docs.xilinx.com/v/u/en-US/pg058-blk-mem-gen)).
 
-A maiores impleméntase un contador ascendente que recorrerá tódalas direccións da memoria ROM. Este contador comezará en 0 e reiniciarase en 784 (785 posicións, as primeiras 784 corresponden cos pesos dos píxeles e a última posición ao peso do bias). Este incremento no contador farase despois da recepción de cada píxel (``Fin_Recepcion'') e unha vez rexistrada a saída da operación do sumatorio (``Load_S'') \ref{I8_flujograma}. Ademáis da saída de direccionamento, engádese unha saída indicativa de que a dirección apunta ao último peso de píxel, de este modo, dende a unidade de control podrase realizar o control do multiplexor para o cambio á entrada do valor bias.
+A maiores impleméntase un contador ascendente que recorrerá tódalas direccións da memoria ROM. Este contador comezará en 0 e reiniciarase en 784 (785 posicións, as primeiras 784 corresponden cos pesos dos píxeles e a última posición ao peso do bias). Este incremento no contador farase despois da recepción de cada píxel ("Fin_Recepcion") e unha vez rexistrada a saída da operación do sumatorio ("Load_S") Figura 3.2. Ademáis da saída de direccionamento, engádese unha saída indicativa de que a dirección apunta ao último peso de píxel, de este modo, dende a unidade de control podrase realizar o control do multiplexor para o cambio á entrada do valor bias.
 
 <div align="center">
   <img src="img/fluxograma_perceptron.png" width="50%" alt="Timing activación do incremento ADDR memoria ROM" />
@@ -207,14 +207,14 @@ Redondeando ao maior o resultado anterior, obteñense 34 bits para representar o
 
 ### 3.3 Bloque función de activación
 
-O último bloque antes de pasar á unidade de control da neurona é a función de activación. A función de activación é de tipo lineal e funciona mediante un limiar, ao superar este, a saída actívase. No caso da función de activación ``hardlim'' o limiar é 0, polo que se a súa entrada é igual ou maior a 0 obterase un 1 á saída, en caso contrario, produce un 0.
+O último bloque antes de pasar á unidade de control da neurona é a función de activación. A función de activación é de tipo lineal e funciona mediante un limiar, ao superar este, a saída actívase. No caso da función de activación "hardlim" o limiar é 0, polo que se a súa entrada é igual ou maior a 0 obterase un 1 á saída, en caso contrario, produce un 0.
 
 Para manter visible o resultado obtido pola neurona, e para que este non varíe durante tódolos cálculos intermedios, incorporase un rexistro no bit de saída, concretamente un biestable. De este modo só se activará o rexistro de saída cando se procesen tódalas entradas e non se reseteará ata unha nova clasificación.
 
 
 ### 3.4 Unidade Operativa Neurona
 
-Na Figura 3.3 represéntanse tódolos bloques que conforman a unidade operativa da neurona e o seu interconexionado. Os sinais de entrada a este bloque, exceptuando o sinal de reloxo ``CLK'' e de reset ``CLR'', son as referidas ás entradas de control dos diferentes elementos. Todos estes sinais de mando son dirixidas dende a Unidade de Control, que se explicará en detalle no seguinte apartado.
+Na Figura 3.3 represéntanse tódolos bloques que conforman a unidade operativa da neurona e o seu interconexionado. Os sinais de entrada a este bloque, exceptuando o sinal de reloxo "CLK" e de reset "CLR", son as referidas ás entradas de control dos diferentes elementos. Todos estes sinais de mando son dirixidas dende a Unidade de Control, que se explicará en detalle no seguinte apartado.
 
 <div align="center">
   <img src="img/ud_o_neurona.png" width="50%" alt="Bloques unidade operativa da neurona" />
