@@ -283,3 +283,40 @@ Como os bytes de cada píxel da imaxe veñen secuencialmente, o problema de cone
 </div>
 
 Hai certos elementos que se poden utilizar para tódalas neuronas. A unidade de control é común, xa que a secuencia das etapas lévase a cabo en tódalas neuronas. Outro elemento que non é necesario reproducir é o multiplexor encargado de cambiar a entrada do píxel pola do bias. Polo tanto, todos os demáis elementos que conforman a neurona é necesario instancialos 10 veces. No caso das memorias ROMs de pesos, hai que realizar o procedemento indicado no apartado da creación da memoria ROM e cargar en cada unha o arquivo COE correspondente.
+
+## 5. Deseño da unidade de comunicación
+
+s imaxes pertencentes ao conxunto de proba están almaceadas no ordenador polo que é necesario envialas á FPGA para obter a clasificación desta. Só é necesario o envío dos datos dende o ordenador, polo que a comunicación será nunha única dirección (Comunicación Simplex).
+O protocolo designado para este caso é o UART, Universal Asynchronous Receiver-Transmitter, o cal utilizarase para o envío dos 784 píxeles que conforman unha imaxe.
+
+A placa de desenrolo Nexys 4 DDR inclúe o integrado FTDI FT2232HQ, encargado de realizar unha ponte USB-UART entre o conector Micro-USB e os pin encargados da comunicación UART na FPGA.
+
+<div align="center">
+  <img src="img/modulo_usb_uart.png" width="50%" alt="Conexionado entre FT2232HQ e Artix-7" />
+  <p><b>Figura 5.1: Conexionado entre FT2232HQ e Artix-7</b></p>
+</div>
+
+A comunicación realizase a través dun porto serie de dous fíos, un deles é o TXD, o fío transmisor e outro é o RXD, o receptor. Neste caso o fluxo de datos vai ser sempre dende o ordenador á FPGA simplificando a transmisión a un só fío, a linea RXD. Ao tratarse dun protocolo serie asíncrono é necesario que os dispositivos involucrados traballen (en relación a comunicación) á mesma velocidade, neste caso será a 115200 baudios.
+
+A trama empregada é a coñecida como 8N1, a cal contén un bit de start, 8 bits de datos, ningún bit de paridade, e un bit de parada. A secuencia que se realiza é a seguinte:
+
+1. En primer lugar, o sinal RXD encóntrase a nivel alto. No momento no cal se pon a nivel baixo (bit de Start) comeza a transmisión.
+2. Ao bit de start síguenlle os 8 bits do dato, bit a bit, comezando polo menos significativo. É neste momento, unha vez transcurrida a metade do ciclo, cando se garda o bit na FPGA.
+3. Por último, o sinal RXD ponse a nivel alto, bit de stop, para indicar que a comunicación finalizou.
+
+
+<div align="center">
+  <img src="img/bits_uart.png" width="50%" alt="Secuencia de transmisión mediante protocolo UART" />
+  <p><b>Figura 5.2: Secuencia de transmisión mediante protocolo UART</b></p>
+</div>
+
+Para realizar o descrito creouse o módulo *TOP_UART_Recepcion*. Cada un dos submódulos que conforman este bloque describense brevemente a continuación.
+
+### 5.1 Unidade Operativa do módulo UART
+
+A unidade Operativa do módulo UART conformano os bloques da Figura 5.3 Cada un deles realiza as seguintes tarefas:
+
+<div align="center">
+  <img src="img/ud_o_uart.png" width="50%" alt="Unidade Operativa do módulo UART" />
+  <p><b>Figura 5.3: Unidade Operativa do módulo UART</b></p>
+</div>
