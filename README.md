@@ -37,17 +37,17 @@ Os datos de partida obteñense da base de datos MNIST ([http://yann.lecun.com/ex
 
 <div align="center" style="display: flex; justify-content: center; align-items: center;">
     <div style="flex: 1; margin: 5px;">
-        <img src="img/mnist_dig_1.png" alt="Representación do nº 1" style="width: 100%;"/>
+        <img src="img/mnist_dig_1.png" alt="Representación do nº 1" style="width: 30%;"/>
         <p><b>Representación do nº 1</b></p>
     </div>
     <div style="flex: 1; margin: 5px;">
-        <img src="img/mnist_dig_2.png" alt="Representación do nº 2" style="width: 100%;"/>
+        <img src="img/mnist_dig_2.png" alt="Representación do nº 2" style="width: 30%;"/>
         <p><b>Representación do nº 2</b></p>
     </div>
     <div style="flex: 1; margin: 5px;">
-        <img src="img/mnist_dig_3.png" alt="Representación do nº 3" style="width: 100%;"/>
+        <img src="img/mnist_dig_3.png" alt="Representación do nº 3" style="width: 30%;"/>
         <p><b>Representación do nº 3</b></p>
     </div>
 </div>
-<p align="center"><b>Representacións dos datos</b></p>
+<p align="center"><b>1.1: Representacións dos datos</b></p>
 
