@@ -86,10 +86,16 @@ O paso previo ao adestramento da rede é acondicionar os datos conforme ao descr
 
 De este modo, as matrices de datos resultantes estarán dispostas de maneira que cada unha das imaxes conformarana tódolas filas (píxeles) dunha columna e a correspondente etiqueta estará na mesma columna da matriz de etiquetas. A saída correspondente da matriz de etiquetas está activa con un 1. Na Figura 2.2 represéntase á esquerda a matriz de imaxes e á dereita a matriz de etiquetas.
 
-<p float="left">
+<p float="center">
   <img src="/img/imaxes_mnist.jpg" width="300" /><p>
   <img src="/img/etiquetas_mnist.jpg" width="300" /><p>
 </p>
+
+<div align="center">
+  <img src="/img/imaxes_mnist.jpg" width="300" /><p>
+  <img src="/img/etiquetas_mnist.jpg" width="300" /><p>
+<p align="center"><b>Figura 2.2: Matriz dos datos</b></p>
+</div>
 
 
 A maiores realízase un normalizado dos datos para facer unha comparativa da precisión da rede adestrada cos datos normalizados e sen normalizar.
