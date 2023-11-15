@@ -44,10 +44,9 @@ Os datos de partida obteñense da base de datos MNIST ([http://yann.lecun.com/ex
 </div>
 
 <p float="left">
-    <img src="img/mnist_dig_1.png" alt="Representación do nº 1" width="25%" style="margin-right: 50;"/>
-    <img src="img/mnist_dig_2.png" alt="Representación do nº 2" width="25%" style="margin-right: 50;"/>
-    <img src="img/mnist_dig_3.png" alt="Representación do nº 3" width="25%" />
-<p align="center"><b>Figura 1.1: Representacións dos datos</b></p>
+    <img src="img/mnist_dig_1.png" alt="Representación do nº 1" width="200" style="margin-right: 50;"/>
+    <img src="img/mnist_dig_2.png" alt="Representación do nº 2" width="200" style="margin-right: 50;"/>
+    <img src="img/mnist_dig_3.png" alt="Representación do nº 3" width="200" />
 </p>
 <div align="center">
   <p align="center"><b>Figura 1.1: Representacións dos datos</b></p>
