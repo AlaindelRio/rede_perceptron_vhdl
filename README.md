@@ -127,7 +127,7 @@ Unha maneira de solventar esto e traballar con datos de punto fixo con signo e s
 
 Neste caso en concreto, os número máximo e mínimo en decimal son 21347 e -33252 respectivamente. En valor absoluto, o número maior é o 33252, polo que serán necesarios 17 bits para representalo en complemento a dous.
 
-O IP Core usado para almacenar os pesos é o ``Block Memory Generator'', o cal admite inicialización da memoria mediante un arquivo de coeficientes de memoria (COE). O arquivo COE especifica o contido de cada ubicación de memoria. Este formato de arquivo para inicializar as memorias ven definido na documentación do fabricante da FPGA ([http://yann.lecun.com/exdb/mnist/](http://yann.lecun.com/exdb/mnist/)).
+O IP Core usado para almacenar os pesos é o ``Block Memory Generator'', o cal admite inicialización da memoria mediante un arquivo de coeficientes de memoria (COE). O arquivo COE especifica o contido de cada ubicación de memoria. Este formato de arquivo para inicializar as memorias ven definido na documentación do fabricante da FPGA ([https://docs.xilinx.com/v/u/en-US/pg058-blk-mem-gen](https://docs.xilinx.com/v/u/en-US/pg058-blk-mem-gen)).
 
 Un COE é un arquivo de texto que especifica dous parámetros.
 
@@ -139,6 +139,84 @@ Baseándose no formato especificado, a sección 6 do código [b_rede_perceptron]
 O resultado é o da Figura 2.5, no cal o texto iníciase co encabezado citado e cada número separado por comas é o contido desa posición de memoria. Pódese ver como as primeiras posicións, ata chegar á novena, están a cero. Esto significa que os píxeles desas posicións non aportan información valiosa.
 
 <div align="center">
-  <img src="img/mostras_por_categoria.png" width="50%" alt="Arquivo COE de memoria" />
+  <img src="img/arquivo_coe.png" width="50%" alt="Arquivo COE de memoria" />
   <p><b>Figura 2.5: Arquivo COE de memoria</b></p>
+</div>
+
+## 3. Deseño hardware do perceptrón
+
+Tomando a neurona como a entidade básica dunha rede neuronal, e partindo do modelo matemático desta, plantéxanse os bloques:
+
+- **Bloque multiplicador:** Multiplica cada píxel de entrada polo seu correspondente peso, almaceado na memoria ROM.
+- **Bloque sumador acumulador:** Suma os resultados da operación de multiplicación co sumatorio acumulado ata o momento.
+- **Bloque función de activación:** Función de activación mediante limiar.
+
+
+Estes tres bloques xuntos conforman a unidade operativa da neurona.
+
+<div align="center">
+  <img src="img/bloques_perceptron.jpg" width="50%" alt="Esquema do perceptrón" />
+  <p><b>Figura 3.1: Esquema do perceptrón</b></p>
+</div>
+
+
+### 3.1 Bloque multiplicador
+
+Este bloque é o encargado de multiplicar o valor de cada píxel polo correspondente peso. Trabállase con números enteiros con signo polo que o problema simplificase sustancialmente.
+
+Hai dúas entradas ao bloque, por un lado está a saída da memoria ROM que almacea tódolos pesos correspondentes á súa neurona, e polo outro a entrada dos datos/píxeles. É importante recordar que cada ROM almacéa os pesos da identificación de un díxito, e debe asignarse á neurona cuxa saída esperada é a identificación de ese mesmo díxito.
+
+#### 3.1.1 Entrada de datos
+
+O valor pertencente a cada píxel recibirase bit a bit de menos significativo a máis significativo (No apartado de comunicación explicarase o proceso de transmisión dos datos). Unha vez se complete a trama de 8 bits é necesario realizar unha extensión de signo. Isto é necesario xa que a multiplicación pode conter números negativos procedentes dos pesos da ROM.
+
+Como xa se mencionou, na ROM tamén está almaceado o peso da entrada bias. A entrada bias, tamén chamada sesgo, ten un valor de un en tódolos casos (a entrada, non o valor correspondente ao seu peso), polo que é necesario agregar un multiplexor que incorpore esa entrada ao multiplicador. A multiplicación do bias polo seu peso realízase en último lugar (o peso bias está na posición 784 da memoria ROM).
+
+#### 3.1.1 Entrada de pesos
+
+A segunda entrada ao bloque multiplicador é a saída da memoria ROM. Incórporase unha memoria ROM de tipo ``Single-port ROM'' a través do ``Block Memory Generator''.
+
+Para que a latencia sexa a mínima, un ciclo de reloxo dende un cambio na entrada de direccionamento, non se incorporan rexistros de saída na ``Memory Core'' nin na ``Memory Primitives''. Igualmente, o bloque de memoria estará sempre activo (EN = `1'), simplificando a tarea de control da memoria. As posibles configuracións e características veñen definidas na documentación ([https://docs.xilinx.com/v/u/en-US/pg058-blk-mem-gen](https://docs.xilinx.com/v/u/en-US/pg058-blk-mem-gen)).
+
+A maiores impleméntase un contador ascendente que recorrerá tódalas direccións da memoria ROM. Este contador comezará en 0 e reiniciarase en 784 (785 posicións, as primeiras 784 corresponden cos pesos dos píxeles e a última posición ao peso do bias). Este incremento no contador farase despois da recepción de cada píxel (``Fin_Recepcion'') e unha vez rexistrada a saída da operación do sumatorio (``Load_S'') \ref{I8_flujograma}. Ademáis da saída de direccionamento, engádese unha saída indicativa de que a dirección apunta ao último peso de píxel, de este modo, dende a unidade de control podrase realizar o control do multiplexor para o cambio á entrada do valor bias.
+
+<div align="center">
+  <img src="img/fluxograma_perceptron.png" width="50%" alt="Timing activación do incremento ADDR memoria ROM" />
+  <p><b>Figura 3.2: Timing activación do incremento ADDR memoria ROM</b></p>
+</div>
+
+Nota: 2. GardaSumatorio, 3. IncrementoAddr
+
+#### Cálculo de bits do módulo
+
+Como xa se mencionou, cada píxel ten un tamaño de 8 bits, que coa extensión de signo aumentaría a 9 bits. A outra entrada ao multiplicador son os pesos con un tamaño de 17 bits, polo que a saída do multiplicador, no caso extremo, terá un máximo de 26 bits, que comprende valores entre -33554432 a 33554431.
+
+### 3.2 Bloque Sumador acumulador
+
+Este bloque é o encargado de realizar a suma da entrada ponderada actual coa suma acumulada das anteriores entradas ponderadas. Para implementar este proceso necesítanse dous bloques, un sumador con dúas entradas e un rexistro á saída do sumador. O rexistro actuará como almacén do sumatorio acumulado e a súa saída volvería á segunda entrada do sumador, realimentando o bloque. O control da carga do valor na saída do rexistro manipularase dende a unidade de control.
+
+#### Cálculo de bits do módulo
+
+Para o cálculo de bits necesarios da saída do sumatorio teranse en conta os valores máximos de cada un dos sinais involucrados. Entón o valor máximo a representar en valor absoluto ven dado pola seguinte ecuación:
+
+(2^8 - 1) * (2^(17-1)) * 784 + 1 * (2^(17-1)) = 13102022656
+
+log2(13102022656) = 33,609
+
+Redondeando ao maior o resultado anterior, obteñense 34 bits para representar o valor máximo. Contando que o número represéntase en Ca2 son necesarios un total de 35 bits.
+
+### 3.3 Bloque función de activación
+
+O último bloque antes de pasar á unidade de control da neurona é a función de activación. A función de activación é de tipo lineal e funciona mediante un limiar, ao superar este, a saída actívase. No caso da función de activación ``hardlim'' o limiar é 0, polo que se a súa entrada é igual ou maior a 0 obterase un 1 á saída, en caso contrario, produce un 0.
+
+Para manter visible o resultado obtido pola neurona, e para que este non varíe durante tódolos cálculos intermedios, incorporase un rexistro no bit de saída, concretamente un biestable. De este modo só se activará o rexistro de saída cando se procesen tódalas entradas e non se reseteará ata unha nova clasificación.
+
+
+### 3.4 Unidade Operativa Neurona
+
+Na Figura 3.3 represéntanse tódolos bloques que conforman a unidade operativa da neurona e o seu interconexionado. Os sinais de entrada a este bloque, exceptuando o sinal de reloxo ``CLK'' e de reset ``CLR'', son as referidas ás entradas de control dos diferentes elementos. Todos estes sinais de mando son dirixidas dende a Unidade de Control, que se explicará en detalle no seguinte apartado.
+
+<div align="center">
+  <img src="img/fluxograma_perceptron.png" width="50%" alt="Timing activación do incremento ADDR memoria ROM" />
+  <p><b>Figura 3.3: Timing activación do incremento ADDR memoria ROM</b></p>
 </div>
