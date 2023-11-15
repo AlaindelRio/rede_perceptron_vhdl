@@ -35,20 +35,11 @@ Por último, comentar que non se trata de realizar un clasificador no que a prec
 
 Os datos de partida obteñense da base de datos MNIST ([http://yann.lecun.com/exdb/mnist/](http://yann.lecun.com/exdb/mnist/)), considerada o "hola mundo" do aprendizaxe automático. Consta de 70.000 "imaxes" de díxitos numéricos escritos a man, en escala de grises e cunhas dimensións de 28x28x1 píxeles. Cada un dos 784 píxeles que conforman unha "imaxe" conteñen 8 bits de información. Na Figura 1.1 represéntanse tres díxitos coa escala de cores á súa esquerda, onde cada píxel pode tomar 256 valores distintos, comezando co 0 para os píxeles brancos e finalizando no 255 para o negro puro.
 
-<div align="center">
-    <img src="img/mnist_dig_1.png" alt="Representación do nº 1" width="20%" />
-    <p align="center"><b>Representación do nº 1</b></p>
-    <img src="img/mnist_dig_2.png" alt="Representación do nº 2" width="20%" />
-    <p align="center"><b>Representación do nº 2</b></p>
-    <img src="img/mnist_dig_3.png" alt="Representación do nº 3" width="20%" />
-    <p><b>1: Esquema xeral da aplicación</b></p>
-<p align="center"><b>1.1: Representacións dos datos</b></p>
-</div>
 
 <div align="center">
-    <img src="img/mnist_dig_1.png" alt="Representación do nº 1" width="20%" />
-    <img src="img/mnist_dig_2.png" alt="Representación do nº 2" width="20%" />
-    <img src="img/mnist_dig_3.png" alt="Representación do nº 3" width="20%" />
+    <img src="img/mnist_dig_1.png" alt="Representación do nº 1" width="25%" />
+    <img src="img/mnist_dig_2.png" alt="Representación do nº 2" width="25%" />
+    <img src="img/mnist_dig_3.png" alt="Representación do nº 3" width="25%" />
 <p align="center"><b>1.1: Representacións dos datos</b></p>
 </div>
 
