@@ -36,7 +36,7 @@ Por último, comentar que non se trata de realizar un clasificador no que a prec
 Os datos de partida obteñense da base de datos MNIST ([http://yann.lecun.com/exdb/mnist/](http://yann.lecun.com/exdb/mnist/)), considerada o "hola mundo" do aprendizaxe automático. Consta de 70.000 "imaxes" de díxitos numéricos escritos a man, en escala de grises e cunhas dimensións de 28x28x1 píxeles. Cada un dos 784 píxeles que conforman unha "imaxe" conteñen 8 bits de información. Na Figura 1.1 represéntanse tres díxitos coa escala de cores á súa esquerda, onde cada píxel pode tomar 256 valores distintos, comezando co 0 para os píxeles brancos e finalizando no 255 para o negro puro.
 
 <p align="center"><b>1.1: Representacións dos datos</b></p>
-<table align="center">
+<table align="center" border="0" cellspacing="0" cellpadding="0">
     <tr>
         <td align="center">
             <img src="img/mnist_dig_1.png" alt="Representación do nº 1" width="20%"/>
