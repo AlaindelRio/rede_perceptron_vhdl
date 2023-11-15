@@ -8,7 +8,7 @@ Entón, tal e como se comentaba ao inicio do apartado, o obxectivo deste caso pr
 
 <div align="center">
   <img src="img/esquema_xeral.png" width="700" alt="Esquema xeral do exemplo de implementación da rede" />
-  <p><b>1: Esquema xeral da aplicación</b></p>
+  <p><b>Figura 1: Esquema xeral da aplicación</b></p>
 </div>
 
 
@@ -40,18 +40,15 @@ Os datos de partida obteñense da base de datos MNIST ([http://yann.lecun.com/ex
     <img src="img/mnist_dig_1.png" alt="Representación do nº 1" width="25%" style="margin-right: 50;"/>
     <img src="img/mnist_dig_2.png" alt="Representación do nº 2" width="25%" style="margin-right: 50;"/>
     <img src="img/mnist_dig_3.png" alt="Representación do nº 3" width="25%" />
-<p align="center"><b>1.1: Representacións dos datos</b></p>
+<p align="center"><b>Figura 1.1: Representacións dos datos</b></p>
 </div>
 
 
 As 70.00 mil móstras están divididas en dous grupos, 60.000 exemplos para o conxunto de adestramento e 10.000 para o conxunto de proba. Na seguinte Táboa 1.1, listanse os arquivos obtidos da base de datos MNIST:
 
 
-|               Nome do arquivo               | Mostras |   Tipo   |         Conxunto          |
-|:-------------------------------------------:|:-------:|:--------:|:-------------------------:|
-| train-images-idx3-ubyte.gz                  | 60 000  | dato     | conxunto de adestramento  |
-| train-labels-idx1-ubyte.gz                  | 60 000  | etiqueta | conxunto de adestramento  |
-| t10k-images-idx3-ubyte.gz                   | 10 000  | dato     | conxunto de proba         |
-| t10k-labels-idx1-ubyte.gz                   | 10 000  | etiqueta | conxunto de proba         |
-
+<div align="center">
+  <img src="img/taboa_1.png" width="700" alt="Arquivos base de datos MNIST" />
+  <p><b>Táboa 1: Arquivos base de datos MNIST</b></p>
+</div>
 
