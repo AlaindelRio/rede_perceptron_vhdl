@@ -155,7 +155,7 @@ Tomando a neurona como a entidade básica dunha rede neuronal, e partindo do mod
 Estes tres bloques xuntos conforman a unidade operativa da neurona.
 
 <div align="center">
-  <img src="img/bloques_perceptron.jpg" width="70%" alt="Esquema do perceptrón" />
+  <img src="img/bloques_perceptron.jpg" width="90%" alt="Esquema do perceptrón" />
   <p><b>Figura 3.1: Esquema do perceptrón</b></p>
 </div>
 
@@ -181,7 +181,7 @@ Para que a latencia sexa a mínima, un ciclo de reloxo dende un cambio na entrad
 A maiores impleméntase un contador ascendente que recorrerá tódalas direccións da memoria ROM. Este contador comezará en 0 e reiniciarase en 784 (785 posicións, as primeiras 784 corresponden cos pesos dos píxeles e a última posición ao peso do bias). Este incremento no contador farase despois da recepción de cada píxel (*Fin_Recepcion*) e unha vez rexistrada a saída da operación do sumatorio (*Load_S*) Figura 3.2. Ademáis da saída de direccionamento, engádese unha saída indicativa de que a dirección apunta ao último peso de píxel, de este modo, dende a unidade de control podrase realizar o control do multiplexor para o cambio á entrada do valor bias.
 
 <div align="center">
-  <img src="img/fluxograma_perceptron.png" width="70%" alt="Timing activación do incremento ADDR memoria ROM" />
+  <img src="img/fluxograma_perceptron.png" width="90%" alt="Timing activación do incremento ADDR memoria ROM" />
   <p><b>Figura 3.2: Timing activación do incremento ADDR memoria ROM</b></p>
 </div>
 
@@ -200,7 +200,7 @@ Este bloque é o encargado de realizar a suma da entrada ponderada actual coa su
 Para o cálculo de bits necesarios da saída do sumatorio teranse en conta os valores máximos de cada un dos sinais involucrados. Entón o valor máximo a representar en valor absoluto ven dado pola seguinte ecuación:
 
 <div align="center">
-  <img src="img/ecuacions.png" width="50%" alt="Número de bits sumador acumulador" />
+  <img src="img/ecuacions.png" width="60%" alt="Número de bits sumador acumulador" />
 </div>
 
 Redondeando ao maior o resultado anterior, obteñense 34 bits para representar o valor máximo. Contando que o número represéntase en Ca2 son necesarios un total de 35 bits.
