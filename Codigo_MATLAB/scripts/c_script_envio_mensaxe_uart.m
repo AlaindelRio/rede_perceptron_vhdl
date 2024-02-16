@@ -5,7 +5,10 @@ FPGA_COM = serial(Port,'BaudRate',115200); % Fixamos 115200 baudios
 set(FPGA_COM,'StopBits',1); % 1 bit de STOP e non hai bit de paridade
 fopen(FPGA_COM);
 imaxe = 2;  % selección da imaxe, da 1 á 10000
-  
+
+load(fullfile(basePath, 'XTrain.mat'));
+load(fullfile(basePath, 'YTrain.mat'));
+
 Digitos = XTrain(:,:,YTrain==imaxe);   % Esta instrucción garda en Digitos
 % as imaxes correspondentes ao valor Digito
 figure

@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/impl_1/TOP.tcl"
+  variable script "C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/impl_1/TOP.tcl"
   variable category "vivado_impl"
 }
 
@@ -123,35 +123,35 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 3
-  set_param runs.launchOptions { -jobs 11  }
+  set_param runs.launchOptions { -jobs 10  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a100tcsg324-3
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.cache/wt [current_project]
-  set_property parent.project_path D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.xpr [current_project]
-  set_property ip_output_repo D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.xpr [current_project]
+  set_property ip_output_repo C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/TOP.dcp
-  read_ip -quiet D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_9/Mem_ROM_9.xci
-  read_ip -quiet D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_8/Mem_ROM_8.xci
-  read_ip -quiet D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_7/Mem_ROM_7.xci
-  read_ip -quiet D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_6/Mem_ROM_6.xci
-  read_ip -quiet D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_5/Mem_ROM_5.xci
-  read_ip -quiet D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_4/Mem_ROM_4.xci
-  read_ip -quiet D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_3/Mem_ROM_3.xci
-  read_ip -quiet D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_2/Mem_ROM_2.xci
-  read_ip -quiet D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_1/Mem_ROM_1.xci
-  read_ip -quiet D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Sumador/Sumador.xci
-  read_ip -quiet D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Contador_ADDR/Contador_ADDR.xci
-  read_ip -quiet D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_0/Mem_ROM_0.xci
+  add_files -quiet C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/TOP.dcp
+  read_ip -quiet C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_9/Mem_ROM_9.xci
+  read_ip -quiet C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_8/Mem_ROM_8.xci
+  read_ip -quiet C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_7/Mem_ROM_7.xci
+  read_ip -quiet C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_6/Mem_ROM_6.xci
+  read_ip -quiet C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_5/Mem_ROM_5.xci
+  read_ip -quiet C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_4/Mem_ROM_4.xci
+  read_ip -quiet C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_3/Mem_ROM_3.xci
+  read_ip -quiet C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_2/Mem_ROM_2.xci
+  read_ip -quiet C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_1/Mem_ROM_1.xci
+  read_ip -quiet C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/ip/Sumador/Sumador.xci
+  read_ip -quiet C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/ip/Contador_ADDR/Contador_ADDR.xci
+  read_ip -quiet C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/ip/Mem_ROM_0/Mem_ROM_0.xci
 OPTRACE "read constraints: implementation" START { }
-  read_xdc D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/constrs_1/imports/Downloads/PinoutNexys4.xdc
+  read_xdc C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/constrs_1/imports/Downloads/PinoutNexys4.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

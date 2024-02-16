@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2023.2
-| Date         : Tue Nov 14 11:20:00 2023
+| Date         : Fri Feb 16 13:46:14 2024
 | Host         : Medion
 | Design       : design_1
 | Device       : xc7a100t-csg324-3--

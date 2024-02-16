@@ -3,6 +3,8 @@
     with args -log TOP.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
 
 
+ECHO est  desactivado.
+ECHO est  desactivado.
 
 ****** Vivado v2023.2 (64-bit)
   **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
@@ -12,9 +14,9 @@
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source TOP.tcl -notrace
-create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 572.590 ; gain = 182.508
-Command: read_checkpoint -auto_incremental -incremental D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/utils_1/imports/synth_1/TOP.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/utils_1/imports/synth_1/TOP.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 462.633 ; gain = 183.309
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/utils_1/imports/synth_1/TOP.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/utils_1/imports/synth_1/TOP.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top TOP -part xc7a100tcsg324-3
 Starting synth_design
@@ -25,195 +27,195 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 21860
+INFO: [Synth 8-7075] Helper process launched with PID 21696
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1438.270 ; gain = 440.801
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1330.977 ; gain = 441.207
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'TOP' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/TOP.vhd:45]
-INFO: [Synth 8-3491] module 'Comprobacion_Display' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Compro_Display.vhd:34' bound to instance 'Inst_Comprobacion_Display' of component 'Comprobacion_Display' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/TOP.vhd:87]
-INFO: [Synth 8-638] synthesizing module 'Comprobacion_Display' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Compro_Display.vhd:44]
-INFO: [Synth 8-3491] module 'Sig_a_abs' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/sig_a_abs.vhd:35' bound to instance 'Inst_Sig_a_abs' of component 'Sig_a_abs' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Compro_Display.vhd:85]
-INFO: [Synth 8-638] synthesizing module 'Sig_a_abs' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/sig_a_abs.vhd:40]
-WARNING: [Synth 8-614] signal 'aux_D' is read in the process but is not in the sensitivity list [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/sig_a_abs.vhd:46]
-INFO: [Synth 8-256] done synthesizing module 'Sig_a_abs' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/sig_a_abs.vhd:40]
-INFO: [Synth 8-3491] module 'Rex_Suma_Final' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Suma_Final.vhd:34' bound to instance 'Inst_Rex_Suma_Final' of component 'Rex_Suma_Final' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Compro_Display.vhd:90]
-INFO: [Synth 8-638] synthesizing module 'Rex_Suma_Final' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Suma_Final.vhd:44]
-INFO: [Synth 8-256] done synthesizing module 'Rex_Suma_Final' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Suma_Final.vhd:44]
-INFO: [Synth 8-3491] module 'decod7seg' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/BLOQUE_1_2_3/decod7seg.vhd:5' bound to instance 'Inst_decod7seg' of component 'decod7seg' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Compro_Display.vhd:100]
-INFO: [Synth 8-638] synthesizing module 'decod7seg' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/BLOQUE_1_2_3/decod7seg.vhd:15]
-INFO: [Synth 8-256] done synthesizing module 'decod7seg' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/BLOQUE_1_2_3/decod7seg.vhd:15]
-INFO: [Synth 8-3491] module 'div_244Hz' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/BLOQUE_1_2_3/div_244Hz.vhd:5' bound to instance 'Inst_div_244Hz' of component 'div_244Hz' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Compro_Display.vhd:109]
-INFO: [Synth 8-638] synthesizing module 'div_244Hz' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/BLOQUE_1_2_3/div_244Hz.vhd:11]
-INFO: [Synth 8-256] done synthesizing module 'div_244Hz' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/BLOQUE_1_2_3/div_244Hz.vhd:11]
-INFO: [Synth 8-256] done synthesizing module 'Comprobacion_Display' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Compro_Display.vhd:44]
-INFO: [Synth 8-3491] module 'RN' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:34' bound to instance 'Inst_RN' of component 'RN' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/TOP.vhd:98]
-INFO: [Synth 8-638] synthesizing module 'RN' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:45]
-INFO: [Synth 8-3491] module 'Contador_ADDR' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Contador_ADDR_stub.vhdl:6' bound to instance 'Ins_Contador_ADDR' of component 'Contador_ADDR' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:198]
-INFO: [Synth 8-638] synthesizing module 'Contador_ADDR' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Contador_ADDR_stub.vhdl:17]
-INFO: [Synth 8-3491] module 'Perceptron_Ud_C' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_C.vhd:34' bound to instance 'Unidade_Control' of component 'Perceptron_Ud_C' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:207]
-INFO: [Synth 8-638] synthesizing module 'Perceptron_Ud_C' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_C.vhd:46]
-INFO: [Synth 8-256] done synthesizing module 'Perceptron_Ud_C' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_C.vhd:46]
-INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_0' of component 'Perceptron_Ud_O' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:220]
-INFO: [Synth 8-638] synthesizing module 'Perceptron_Ud_O' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:38]
-INFO: [Synth 8-3491] module 'Multiplicador' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Multiplicador.vhd:36' bound to instance 'Inst_Multiplicador' of component 'Multiplicador' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:85]
-INFO: [Synth 8-638] synthesizing module 'Multiplicador' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Multiplicador.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'Multiplicador' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Multiplicador.vhd:42]
-INFO: [Synth 8-3491] module 'Sumador' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Sumador_stub.vhdl:6' bound to instance 'Inst_Sumador' of component 'Sumador' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:92]
-INFO: [Synth 8-638] synthesizing module 'Sumador' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Sumador_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'Rexistro' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Rexistro.vhd:25' bound to instance 'Inst_Rexistro' of component 'Rexistro' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:99]
-INFO: [Synth 8-638] synthesizing module 'Rexistro' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Rexistro.vhd:34]
-INFO: [Synth 8-256] done synthesizing module 'Rexistro' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Rexistro.vhd:34]
-INFO: [Synth 8-3491] module 'F_activacion' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/F_activacion.vhd:26' bound to instance 'Inst_F_Activacion' of component 'F_Activacion' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:109]
-INFO: [Synth 8-638] synthesizing module 'F_activacion' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/F_activacion.vhd:31]
-INFO: [Synth 8-256] done synthesizing module 'F_activacion' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/F_activacion.vhd:31]
-INFO: [Synth 8-3491] module 'Rexistro_Z' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Biestable.vhd:34' bound to instance 'Inst_Rexistro_Z' of component 'Rexistro_Z' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:115]
-INFO: [Synth 8-638] synthesizing module 'Rexistro_Z' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Biestable.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'Rexistro_Z' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Biestable.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'Perceptron_Ud_O' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:38]
-INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_1' of component 'Perceptron_Ud_O' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:233]
-INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_2' of component 'Perceptron_Ud_O' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:246]
-INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_3' of component 'Perceptron_Ud_O' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:259]
-INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_4' of component 'Perceptron_Ud_O' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:272]
-INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_5' of component 'Perceptron_Ud_O' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:285]
-INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_6' of component 'Perceptron_Ud_O' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:298]
-INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_7' of component 'Perceptron_Ud_O' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:311]
-INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_8' of component 'Perceptron_Ud_O' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:324]
-INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_9' of component 'Perceptron_Ud_O' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:337]
-INFO: [Synth 8-3491] module 'Mux' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Mux.vhd:34' bound to instance 'Inst_Mux' of component 'Mux' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:350]
-INFO: [Synth 8-638] synthesizing module 'Mux' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Mux.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'Mux' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/Mux.vhd:41]
-INFO: [Synth 8-3491] module 'Mem_ROM_0' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Mem_ROM_0_stub.vhdl:6' bound to instance 'ROM_0' of component 'Mem_ROM_0' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:358]
-INFO: [Synth 8-638] synthesizing module 'Mem_ROM_0' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Mem_ROM_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'Mem_ROM_1' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Mem_ROM_1_stub.vhdl:6' bound to instance 'ROM_1' of component 'Mem_ROM_1' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:365]
-INFO: [Synth 8-638] synthesizing module 'Mem_ROM_1' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Mem_ROM_1_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'Mem_ROM_2' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Mem_ROM_2_stub.vhdl:6' bound to instance 'ROM_2' of component 'Mem_ROM_2' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:371]
-INFO: [Synth 8-638] synthesizing module 'Mem_ROM_2' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Mem_ROM_2_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'Mem_ROM_3' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Mem_ROM_3_stub.vhdl:6' bound to instance 'ROM_3' of component 'Mem_ROM_3' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:378]
-INFO: [Synth 8-638] synthesizing module 'Mem_ROM_3' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Mem_ROM_3_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'Mem_ROM_4' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Mem_ROM_4_stub.vhdl:6' bound to instance 'ROM_4' of component 'Mem_ROM_4' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:384]
-INFO: [Synth 8-638] synthesizing module 'Mem_ROM_4' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Mem_ROM_4_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'Mem_ROM_5' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Mem_ROM_5_stub.vhdl:6' bound to instance 'ROM_5' of component 'Mem_ROM_5' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:391]
-INFO: [Synth 8-638] synthesizing module 'Mem_ROM_5' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Mem_ROM_5_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'Mem_ROM_6' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Mem_ROM_6_stub.vhdl:6' bound to instance 'ROM_6' of component 'Mem_ROM_6' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:397]
-INFO: [Synth 8-638] synthesizing module 'Mem_ROM_6' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Mem_ROM_6_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'Mem_ROM_7' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Mem_ROM_7_stub.vhdl:6' bound to instance 'ROM_7' of component 'Mem_ROM_7' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:404]
-INFO: [Synth 8-638] synthesizing module 'Mem_ROM_7' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Mem_ROM_7_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'Mem_ROM_8' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Mem_ROM_8_stub.vhdl:6' bound to instance 'ROM_8' of component 'Mem_ROM_8' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:411]
-INFO: [Synth 8-638] synthesizing module 'Mem_ROM_8' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Mem_ROM_8_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'Mem_ROM_9' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Mem_ROM_9_stub.vhdl:6' bound to instance 'ROM_9' of component 'Mem_ROM_9' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:417]
-INFO: [Synth 8-638] synthesizing module 'Mem_ROM_9' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/realtime/Mem_ROM_9_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'Mux_Sumatorio' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Mux_Sumatorio.vhd:34' bound to instance 'Inst_Mux_Sumatorio' of component 'Mux_Sumatorio' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:424]
-INFO: [Synth 8-638] synthesizing module 'Mux_Sumatorio' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Mux_Sumatorio.vhd:49]
-INFO: [Synth 8-256] done synthesizing module 'Mux_Sumatorio' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/Mux_Sumatorio.vhd:49]
-INFO: [Synth 8-256] done synthesizing module 'RN' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:45]
-INFO: [Synth 8-3491] module 'TOP_UART_Recepcion' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/TOP_UART_Recepcion.vhd:23' bound to instance 'Inst_TOP_UART_Recepcion' of component 'TOP_UART_Recepcion' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/TOP.vhd:110]
-INFO: [Synth 8-638] synthesizing module 'TOP_UART_Recepcion' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/TOP_UART_Recepcion.vhd:31]
-INFO: [Synth 8-3491] module 'UART_recepcion_Ud_Control' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Ud_Control_UART_recepcion.vhd:23' bound to instance 'Inst_UART_recepcion_Ud_Control' of component 'UART_recepcion_Ud_Control' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/TOP_UART_Recepcion.vhd:70]
-INFO: [Synth 8-638] synthesizing module 'UART_recepcion_Ud_Control' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Ud_Control_UART_recepcion.vhd:37]
-INFO: [Synth 8-256] done synthesizing module 'UART_recepcion_Ud_Control' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Ud_Control_UART_recepcion.vhd:37]
-INFO: [Synth 8-3491] module 'UART_recepcion_Ud_Operativa' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:23' bound to instance 'Inst_UART_recepcion_Ud_Operativa' of component 'UART_recepcion_Ud_Operativa' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/TOP_UART_Recepcion.vhd:84]
-INFO: [Synth 8-638] synthesizing module 'UART_recepcion_Ud_Operativa' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:38]
-INFO: [Synth 8-3491] module 'Contador' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/CONT_ASC.vhd:8' bound to instance 'Inst_Contador' of component 'Contador' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:93]
-INFO: [Synth 8-638] synthesizing module 'Contador' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/CONT_ASC.vhd:15]
-INFO: [Synth 8-256] done synthesizing module 'Contador' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/CONT_ASC.vhd:15]
-INFO: [Synth 8-3491] module 'Rex_desprazamento' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Reg_desplazamiento.vhd:6' bound to instance 'Inst_Rex_desprazamento' of component 'Rex_desprazamento' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:100]
-INFO: [Synth 8-638] synthesizing module 'Rex_desprazamento' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Reg_desplazamiento.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'Rex_desprazamento' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Reg_desplazamiento.vhd:14]
-INFO: [Synth 8-3491] module 'Rexisto_saida_UART' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Rexisto_saida_UART.vhd:24' bound to instance 'Inst_Rexisto_saida_UART' of component 'Rexisto_saida_UART' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:108]
-INFO: [Synth 8-638] synthesizing module 'Rexisto_saida_UART' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Rexisto_saida_UART.vhd:32]
-INFO: [Synth 8-256] done synthesizing module 'Rexisto_saida_UART' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Rexisto_saida_UART.vhd:32]
-INFO: [Synth 8-3491] module 'Detector_flanco' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Detector_flanco.vhd:23' bound to instance 'Inst_Detector_flanco' of component 'Detector_flanco' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:116]
-INFO: [Synth 8-638] synthesizing module 'Detector_flanco' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Detector_flanco.vhd:30]
-INFO: [Synth 8-256] done synthesizing module 'Detector_flanco' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Detector_flanco.vhd:30]
-INFO: [Synth 8-3491] module 'Cont_ciclos' declared at 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Cont_ciclos.vhd:25' bound to instance 'Inst_Cont_ciclos' of component 'Cont_ciclos' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:123]
-INFO: [Synth 8-638] synthesizing module 'Cont_ciclos' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Cont_ciclos.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/TOP.vhd:45]
+INFO: [Synth 8-3491] module 'Comprobacion_Display' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/Compro_Display.vhd:34' bound to instance 'Inst_Comprobacion_Display' of component 'Comprobacion_Display' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/TOP.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'Comprobacion_Display' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/Compro_Display.vhd:44]
+INFO: [Synth 8-3491] module 'Sig_a_abs' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/sig_a_abs.vhd:35' bound to instance 'Inst_Sig_a_abs' of component 'Sig_a_abs' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/Compro_Display.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'Sig_a_abs' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/sig_a_abs.vhd:40]
+WARNING: [Synth 8-614] signal 'aux_D' is read in the process but is not in the sensitivity list [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/sig_a_abs.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'Sig_a_abs' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/sig_a_abs.vhd:40]
+INFO: [Synth 8-3491] module 'Rex_Suma_Final' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/Suma_Final.vhd:34' bound to instance 'Inst_Rex_Suma_Final' of component 'Rex_Suma_Final' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/Compro_Display.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'Rex_Suma_Final' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/Suma_Final.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Rex_Suma_Final' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/Suma_Final.vhd:44]
+INFO: [Synth 8-3491] module 'decod7seg' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/BLOQUE_1_2_3/decod7seg.vhd:5' bound to instance 'Inst_decod7seg' of component 'decod7seg' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/Compro_Display.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'decod7seg' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/BLOQUE_1_2_3/decod7seg.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'decod7seg' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/BLOQUE_1_2_3/decod7seg.vhd:15]
+INFO: [Synth 8-3491] module 'div_244Hz' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/BLOQUE_1_2_3/div_244Hz.vhd:5' bound to instance 'Inst_div_244Hz' of component 'div_244Hz' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/Compro_Display.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'div_244Hz' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/BLOQUE_1_2_3/div_244Hz.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'div_244Hz' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/BLOQUE_1_2_3/div_244Hz.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'Comprobacion_Display' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/Compro_Display.vhd:44]
+INFO: [Synth 8-3491] module 'RN' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:34' bound to instance 'Inst_RN' of component 'RN' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/TOP.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'RN' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:45]
+INFO: [Synth 8-3491] module 'Contador_ADDR' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Contador_ADDR_stub.vhdl:6' bound to instance 'Ins_Contador_ADDR' of component 'Contador_ADDR' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:198]
+INFO: [Synth 8-638] synthesizing module 'Contador_ADDR' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Contador_ADDR_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_C' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_C.vhd:34' bound to instance 'Unidade_Control' of component 'Perceptron_Ud_C' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'Perceptron_Ud_C' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_C.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'Perceptron_Ud_C' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_C.vhd:46]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_0' of component 'Perceptron_Ud_O' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:220]
+INFO: [Synth 8-638] synthesizing module 'Perceptron_Ud_O' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:38]
+INFO: [Synth 8-3491] module 'Multiplicador' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Multiplicador.vhd:36' bound to instance 'Inst_Multiplicador' of component 'Multiplicador' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'Multiplicador' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Multiplicador.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Multiplicador' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Multiplicador.vhd:42]
+INFO: [Synth 8-3491] module 'Sumador' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Sumador_stub.vhdl:6' bound to instance 'Inst_Sumador' of component 'Sumador' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'Sumador' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Sumador_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Rexistro' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Rexistro.vhd:25' bound to instance 'Inst_Rexistro' of component 'Rexistro' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'Rexistro' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Rexistro.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'Rexistro' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Rexistro.vhd:34]
+INFO: [Synth 8-3491] module 'F_activacion' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/F_activacion.vhd:26' bound to instance 'Inst_F_Activacion' of component 'F_Activacion' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'F_activacion' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/F_activacion.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'F_activacion' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/F_activacion.vhd:31]
+INFO: [Synth 8-3491] module 'Rexistro_Z' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Biestable.vhd:34' bound to instance 'Inst_Rexistro_Z' of component 'Rexistro_Z' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'Rexistro_Z' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Biestable.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Rexistro_Z' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Biestable.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Perceptron_Ud_O' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:38]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_1' of component 'Perceptron_Ud_O' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:233]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_2' of component 'Perceptron_Ud_O' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:246]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_3' of component 'Perceptron_Ud_O' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:259]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_4' of component 'Perceptron_Ud_O' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:272]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_5' of component 'Perceptron_Ud_O' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:285]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_6' of component 'Perceptron_Ud_O' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:298]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_7' of component 'Perceptron_Ud_O' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:311]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_8' of component 'Perceptron_Ud_O' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:324]
+INFO: [Synth 8-3491] module 'Perceptron_Ud_O' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Perceptron_Ud_O.vhd:26' bound to instance 'Neurona_Ud_O_9' of component 'Perceptron_Ud_O' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:337]
+INFO: [Synth 8-3491] module 'Mux' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Mux.vhd:34' bound to instance 'Inst_Mux' of component 'Mux' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:350]
+INFO: [Synth 8-638] synthesizing module 'Mux' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Mux.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Mux' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/Mux.vhd:41]
+INFO: [Synth 8-3491] module 'Mem_ROM_0' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Mem_ROM_0_stub.vhdl:6' bound to instance 'ROM_0' of component 'Mem_ROM_0' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:358]
+INFO: [Synth 8-638] synthesizing module 'Mem_ROM_0' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Mem_ROM_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Mem_ROM_1' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Mem_ROM_1_stub.vhdl:6' bound to instance 'ROM_1' of component 'Mem_ROM_1' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:365]
+INFO: [Synth 8-638] synthesizing module 'Mem_ROM_1' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Mem_ROM_1_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Mem_ROM_2' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Mem_ROM_2_stub.vhdl:6' bound to instance 'ROM_2' of component 'Mem_ROM_2' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:371]
+INFO: [Synth 8-638] synthesizing module 'Mem_ROM_2' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Mem_ROM_2_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Mem_ROM_3' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Mem_ROM_3_stub.vhdl:6' bound to instance 'ROM_3' of component 'Mem_ROM_3' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:378]
+INFO: [Synth 8-638] synthesizing module 'Mem_ROM_3' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Mem_ROM_3_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Mem_ROM_4' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Mem_ROM_4_stub.vhdl:6' bound to instance 'ROM_4' of component 'Mem_ROM_4' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:384]
+INFO: [Synth 8-638] synthesizing module 'Mem_ROM_4' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Mem_ROM_4_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Mem_ROM_5' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Mem_ROM_5_stub.vhdl:6' bound to instance 'ROM_5' of component 'Mem_ROM_5' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:391]
+INFO: [Synth 8-638] synthesizing module 'Mem_ROM_5' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Mem_ROM_5_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Mem_ROM_6' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Mem_ROM_6_stub.vhdl:6' bound to instance 'ROM_6' of component 'Mem_ROM_6' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:397]
+INFO: [Synth 8-638] synthesizing module 'Mem_ROM_6' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Mem_ROM_6_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Mem_ROM_7' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Mem_ROM_7_stub.vhdl:6' bound to instance 'ROM_7' of component 'Mem_ROM_7' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:404]
+INFO: [Synth 8-638] synthesizing module 'Mem_ROM_7' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Mem_ROM_7_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Mem_ROM_8' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Mem_ROM_8_stub.vhdl:6' bound to instance 'ROM_8' of component 'Mem_ROM_8' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:411]
+INFO: [Synth 8-638] synthesizing module 'Mem_ROM_8' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Mem_ROM_8_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Mem_ROM_9' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Mem_ROM_9_stub.vhdl:6' bound to instance 'ROM_9' of component 'Mem_ROM_9' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:417]
+INFO: [Synth 8-638] synthesizing module 'Mem_ROM_9' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/realtime/Mem_ROM_9_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Mux_Sumatorio' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/Mux_Sumatorio.vhd:34' bound to instance 'Inst_Mux_Sumatorio' of component 'Mux_Sumatorio' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:424]
+INFO: [Synth 8-638] synthesizing module 'Mux_Sumatorio' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/Mux_Sumatorio.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'Mux_Sumatorio' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/Mux_Sumatorio.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'RN' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/new/RN.vhd:45]
+INFO: [Synth 8-3491] module 'TOP_UART_Recepcion' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/TOP_UART_Recepcion.vhd:23' bound to instance 'Inst_TOP_UART_Recepcion' of component 'TOP_UART_Recepcion' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/TOP.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'TOP_UART_Recepcion' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/TOP_UART_Recepcion.vhd:31]
+INFO: [Synth 8-3491] module 'UART_recepcion_Ud_Control' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Ud_Control_UART_recepcion.vhd:23' bound to instance 'Inst_UART_recepcion_Ud_Control' of component 'UART_recepcion_Ud_Control' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/TOP_UART_Recepcion.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'UART_recepcion_Ud_Control' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Ud_Control_UART_recepcion.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'UART_recepcion_Ud_Control' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Ud_Control_UART_recepcion.vhd:37]
+INFO: [Synth 8-3491] module 'UART_recepcion_Ud_Operativa' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:23' bound to instance 'Inst_UART_recepcion_Ud_Operativa' of component 'UART_recepcion_Ud_Operativa' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/TOP_UART_Recepcion.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'UART_recepcion_Ud_Operativa' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:38]
+INFO: [Synth 8-3491] module 'Contador' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/CONT_ASC.vhd:8' bound to instance 'Inst_Contador' of component 'Contador' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'Contador' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/CONT_ASC.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Contador' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/CONT_ASC.vhd:15]
+INFO: [Synth 8-3491] module 'Rex_desprazamento' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Reg_desplazamiento.vhd:6' bound to instance 'Inst_Rex_desprazamento' of component 'Rex_desprazamento' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'Rex_desprazamento' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Reg_desplazamiento.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Rex_desprazamento' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Reg_desplazamiento.vhd:14]
+INFO: [Synth 8-3491] module 'Rexisto_saida_UART' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Rexisto_saida_UART.vhd:24' bound to instance 'Inst_Rexisto_saida_UART' of component 'Rexisto_saida_UART' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'Rexisto_saida_UART' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Rexisto_saida_UART.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'Rexisto_saida_UART' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Rexisto_saida_UART.vhd:32]
+INFO: [Synth 8-3491] module 'Detector_flanco' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Detector_flanco.vhd:23' bound to instance 'Inst_Detector_flanco' of component 'Detector_flanco' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'Detector_flanco' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Detector_flanco.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'Detector_flanco' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Detector_flanco.vhd:30]
+INFO: [Synth 8-3491] module 'Cont_ciclos' declared at 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Cont_ciclos.vhd:25' bound to instance 'Inst_Cont_ciclos' of component 'Cont_ciclos' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'Cont_ciclos' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Cont_ciclos.vhd:34]
 	Parameter Baudios bound to: 115200 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Cont_ciclos' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Cont_ciclos.vhd:34]
-INFO: [Synth 8-256] done synthesizing module 'UART_recepcion_Ud_Operativa' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:38]
-INFO: [Synth 8-256] done synthesizing module 'TOP_UART_Recepcion' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/TOP_UART_Recepcion.vhd:31]
-INFO: [Synth 8-256] done synthesizing module 'TOP' (0#1) [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/TOP.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'Cont_ciclos' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/Cont_ciclos.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'UART_recepcion_Ud_Operativa' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/UART_recepcion_Ud_Control.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'TOP_UART_Recepcion' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/imports/UART_Recepcion/TOP_UART_Recepcion.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (0#1) [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/TOP.vhd:45]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1551.430 ; gain = 553.961
+Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1445.801 ; gain = 556.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1551.430 ; gain = 553.961
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1445.801 ; gain = 556.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1551.430 ; gain = 553.961
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1445.801 ; gain = 556.031
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1551.430 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1445.801 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Mem_ROM_9/Mem_ROM_9/Mem_ROM_9_in_context.xdc] for cell 'Inst_RN/ROM_9'
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Mem_ROM_9/Mem_ROM_9/Mem_ROM_9_in_context.xdc] for cell 'Inst_RN/ROM_9'
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Mem_ROM_8/Mem_ROM_8/Mem_ROM_8_in_context.xdc] for cell 'Inst_RN/ROM_8'
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Mem_ROM_8/Mem_ROM_8/Mem_ROM_8_in_context.xdc] for cell 'Inst_RN/ROM_8'
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Mem_ROM_7/Mem_ROM_7/Mem_ROM_7_in_context.xdc] for cell 'Inst_RN/ROM_7'
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Mem_ROM_7/Mem_ROM_7/Mem_ROM_7_in_context.xdc] for cell 'Inst_RN/ROM_7'
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Mem_ROM_6/Mem_ROM_6/Mem_ROM_6_in_context.xdc] for cell 'Inst_RN/ROM_6'
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Mem_ROM_6/Mem_ROM_6/Mem_ROM_6_in_context.xdc] for cell 'Inst_RN/ROM_6'
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Mem_ROM_5/Mem_ROM_5/Mem_ROM_5_in_context.xdc] for cell 'Inst_RN/ROM_5'
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Mem_ROM_5/Mem_ROM_5/Mem_ROM_5_in_context.xdc] for cell 'Inst_RN/ROM_5'
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Mem_ROM_4/Mem_ROM_4/Mem_ROM_4_in_context.xdc] for cell 'Inst_RN/ROM_4'
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Mem_ROM_4/Mem_ROM_4/Mem_ROM_4_in_context.xdc] for cell 'Inst_RN/ROM_4'
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Mem_ROM_3/Mem_ROM_3/Mem_ROM_3_in_context.xdc] for cell 'Inst_RN/ROM_3'
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Mem_ROM_3/Mem_ROM_3/Mem_ROM_3_in_context.xdc] for cell 'Inst_RN/ROM_3'
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Mem_ROM_2/Mem_ROM_2/Mem_ROM_2_in_context.xdc] for cell 'Inst_RN/ROM_2'
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Mem_ROM_2/Mem_ROM_2/Mem_ROM_2_in_context.xdc] for cell 'Inst_RN/ROM_2'
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Mem_ROM_1/Mem_ROM_1/Mem_ROM_1_in_context.xdc] for cell 'Inst_RN/ROM_1'
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Mem_ROM_1/Mem_ROM_1/Mem_ROM_1_in_context.xdc] for cell 'Inst_RN/ROM_1'
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_0/Inst_Sumador'
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_0/Inst_Sumador'
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_1/Inst_Sumador'
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_1/Inst_Sumador'
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_2/Inst_Sumador'
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_2/Inst_Sumador'
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_3/Inst_Sumador'
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_3/Inst_Sumador'
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_4/Inst_Sumador'
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_4/Inst_Sumador'
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_5/Inst_Sumador'
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_5/Inst_Sumador'
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_6/Inst_Sumador'
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_6/Inst_Sumador'
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_7/Inst_Sumador'
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_7/Inst_Sumador'
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_8/Inst_Sumador'
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_8/Inst_Sumador'
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_9/Inst_Sumador'
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_9/Inst_Sumador'
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Contador_ADDR/Contador_ADDR/Contador_ADDR_in_context.xdc] for cell 'Inst_RN/Ins_Contador_ADDR'
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Contador_ADDR/Contador_ADDR/Contador_ADDR_in_context.xdc] for cell 'Inst_RN/Ins_Contador_ADDR'
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Mem_ROM_0/Mem_ROM_0/Mem_ROM_0_in_context.xdc] for cell 'Inst_RN/ROM_0'
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-22344-Medion/Mem_ROM_0/Mem_ROM_0/Mem_ROM_0_in_context.xdc] for cell 'Inst_RN/ROM_0'
-Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/constrs_1/imports/Downloads/PinoutNexys4.xdc]
-Finished Parsing XDC File [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/constrs_1/imports/Downloads/PinoutNexys4.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/constrs_1/imports/Downloads/PinoutNexys4.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Mem_ROM_9/Mem_ROM_9/Mem_ROM_9_in_context.xdc] for cell 'Inst_RN/ROM_9'
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Mem_ROM_9/Mem_ROM_9/Mem_ROM_9_in_context.xdc] for cell 'Inst_RN/ROM_9'
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Mem_ROM_8/Mem_ROM_8/Mem_ROM_8_in_context.xdc] for cell 'Inst_RN/ROM_8'
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Mem_ROM_8/Mem_ROM_8/Mem_ROM_8_in_context.xdc] for cell 'Inst_RN/ROM_8'
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Mem_ROM_7/Mem_ROM_7/Mem_ROM_7_in_context.xdc] for cell 'Inst_RN/ROM_7'
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Mem_ROM_7/Mem_ROM_7/Mem_ROM_7_in_context.xdc] for cell 'Inst_RN/ROM_7'
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Mem_ROM_6/Mem_ROM_6/Mem_ROM_6_in_context.xdc] for cell 'Inst_RN/ROM_6'
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Mem_ROM_6/Mem_ROM_6/Mem_ROM_6_in_context.xdc] for cell 'Inst_RN/ROM_6'
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Mem_ROM_5/Mem_ROM_5/Mem_ROM_5_in_context.xdc] for cell 'Inst_RN/ROM_5'
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Mem_ROM_5/Mem_ROM_5/Mem_ROM_5_in_context.xdc] for cell 'Inst_RN/ROM_5'
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Mem_ROM_4/Mem_ROM_4/Mem_ROM_4_in_context.xdc] for cell 'Inst_RN/ROM_4'
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Mem_ROM_4/Mem_ROM_4/Mem_ROM_4_in_context.xdc] for cell 'Inst_RN/ROM_4'
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Mem_ROM_3/Mem_ROM_3/Mem_ROM_3_in_context.xdc] for cell 'Inst_RN/ROM_3'
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Mem_ROM_3/Mem_ROM_3/Mem_ROM_3_in_context.xdc] for cell 'Inst_RN/ROM_3'
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Mem_ROM_2/Mem_ROM_2/Mem_ROM_2_in_context.xdc] for cell 'Inst_RN/ROM_2'
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Mem_ROM_2/Mem_ROM_2/Mem_ROM_2_in_context.xdc] for cell 'Inst_RN/ROM_2'
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Mem_ROM_1/Mem_ROM_1/Mem_ROM_1_in_context.xdc] for cell 'Inst_RN/ROM_1'
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Mem_ROM_1/Mem_ROM_1/Mem_ROM_1_in_context.xdc] for cell 'Inst_RN/ROM_1'
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_0/Inst_Sumador'
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_0/Inst_Sumador'
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_1/Inst_Sumador'
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_1/Inst_Sumador'
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_2/Inst_Sumador'
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_2/Inst_Sumador'
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_3/Inst_Sumador'
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_3/Inst_Sumador'
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_4/Inst_Sumador'
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_4/Inst_Sumador'
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_5/Inst_Sumador'
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_5/Inst_Sumador'
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_6/Inst_Sumador'
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_6/Inst_Sumador'
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_7/Inst_Sumador'
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_7/Inst_Sumador'
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_8/Inst_Sumador'
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_8/Inst_Sumador'
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_9/Inst_Sumador'
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Sumador/Sumador/Sumador_in_context.xdc] for cell 'Inst_RN/Neurona_Ud_O_9/Inst_Sumador'
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Contador_ADDR/Contador_ADDR/Contador_ADDR_in_context.xdc] for cell 'Inst_RN/Ins_Contador_ADDR'
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Contador_ADDR/Contador_ADDR/Contador_ADDR_in_context.xdc] for cell 'Inst_RN/Ins_Contador_ADDR'
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Mem_ROM_0/Mem_ROM_0/Mem_ROM_0_in_context.xdc] for cell 'Inst_RN/ROM_0'
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/.Xil/Vivado-1776-Medion/Mem_ROM_0/Mem_ROM_0/Mem_ROM_0_in_context.xdc] for cell 'Inst_RN/ROM_0'
+Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/constrs_1/imports/Downloads/PinoutNexys4.xdc]
+Finished Parsing XDC File [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/constrs_1/imports/Downloads/PinoutNexys4.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/constrs_1/imports/Downloads/PinoutNexys4.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1639.312 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1546.988 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 El sistema no puede encontrar la ruta especificada.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1639.312 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1546.988 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 1639.312 ; gain = 641.844
+Finished Constraint Validation : Time (s): cpu = 00:00:01 ; elapsed = 00:00:26 . Memory (MB): peak = 1546.988 ; gain = 657.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 1639.312 ; gain = 641.844
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:01 ; elapsed = 00:00:26 . Memory (MB): peak = 1546.988 ; gain = 657.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -240,12 +242,12 @@ Applied set_property KEEP_HIERARCHY = SOFT for Inst_RN/Neurona_Ud_O_9/Inst_Sumad
 Applied set_property KEEP_HIERARCHY = SOFT for Inst_RN/Ins_Contador_ADDR. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for Inst_RN/ROM_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 1639.312 ; gain = 641.844
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:01 ; elapsed = 00:00:26 . Memory (MB): peak = 1546.988 ; gain = 657.219
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3936] Found unconnected internal register 'aux_D_reg' and it is trimmed from '35' to '32' bits. [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/sig_a_abs.vhd:49]
+WARNING: [Synth 8-3936] Found unconnected internal register 'aux_D_reg' and it is trimmed from '35' to '32' bits. [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/sig_a_abs.vhd:49]
 INFO: [Synth 8-802] inferred FSM for state register 'estado_actual_reg' in module 'Perceptron_Ud_C'
 INFO: [Synth 8-802] inferred FSM for state register 'estado_actual_reg' in module 'UART_recepcion_Ud_Control'
-WARNING: [Synth 8-327] inferring latch for variable 'aux_D_reg' [D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.srcs/sources_1/new/sig_a_abs.vhd:49]
+WARNING: [Synth 8-327] inferring latch for variable 'aux_D_reg' [C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.srcs/sources_1/new/sig_a_abs.vhd:49]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -272,7 +274,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'estado_actual_reg' using e
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'estado_actual_reg' using encoding 'one-hot' in module 'UART_recepcion_Ud_Control'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:25 . Memory (MB): peak = 1639.312 ; gain = 641.844
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:26 . Memory (MB): peak = 1546.988 ; gain = 657.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -337,7 +339,7 @@ DSP Report: operator Inst_RN/Neurona_Ud_O_8/Inst_Multiplicador/multOp is absorbe
 DSP Report: Generating DSP Inst_RN/Neurona_Ud_O_9/Inst_Multiplicador/multOp, operation Mode is: A*B.
 DSP Report: operator Inst_RN/Neurona_Ud_O_9/Inst_Multiplicador/multOp is absorbed into DSP Inst_RN/Neurona_Ud_O_9/Inst_Multiplicador/multOp.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:01 ; elapsed = 00:00:30 . Memory (MB): peak = 1639.312 ; gain = 641.844
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:01 ; elapsed = 00:00:32 . Memory (MB): peak = 1546.988 ; gain = 657.219
 ---------------------------------------------------------------------------------
  Sort Area is  Inst_RN/Neurona_Ud_O_0/Inst_Multiplicador/multOp_0 : 0 0 : 1007 1007 : Used 1 time 0
  Sort Area is  Inst_RN/Neurona_Ud_O_1/Inst_Multiplicador/multOp_2 : 0 0 : 1007 1007 : Used 1 time 0
@@ -377,19 +379,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:01 ; elapsed = 00:00:43 . Memory (MB): peak = 1639.312 ; gain = 641.844
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:01 ; elapsed = 00:00:45 . Memory (MB): peak = 1546.988 ; gain = 657.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:01 ; elapsed = 00:00:43 . Memory (MB): peak = 1639.312 ; gain = 641.844
+Finished Timing Optimization : Time (s): cpu = 00:00:01 ; elapsed = 00:00:45 . Memory (MB): peak = 1546.988 ; gain = 657.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:01 ; elapsed = 00:00:43 . Memory (MB): peak = 1639.312 ; gain = 641.844
+Finished Technology Mapping : Time (s): cpu = 00:00:01 ; elapsed = 00:00:45 . Memory (MB): peak = 1546.988 ; gain = 657.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -407,37 +409,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:01 ; elapsed = 00:00:50 . Memory (MB): peak = 1639.312 ; gain = 641.844
+Finished IO Insertion : Time (s): cpu = 00:00:01 ; elapsed = 00:00:53 . Memory (MB): peak = 1546.988 ; gain = 657.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:01 ; elapsed = 00:00:50 . Memory (MB): peak = 1639.312 ; gain = 641.844
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:01 ; elapsed = 00:00:53 . Memory (MB): peak = 1546.988 ; gain = 657.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:01 ; elapsed = 00:00:50 . Memory (MB): peak = 1639.312 ; gain = 641.844
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:01 ; elapsed = 00:00:53 . Memory (MB): peak = 1546.988 ; gain = 657.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:01 ; elapsed = 00:00:50 . Memory (MB): peak = 1639.312 ; gain = 641.844
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:01 ; elapsed = 00:00:53 . Memory (MB): peak = 1546.988 ; gain = 657.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:50 . Memory (MB): peak = 1639.312 ; gain = 641.844
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:53 . Memory (MB): peak = 1546.988 ; gain = 657.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:01 ; elapsed = 00:00:50 . Memory (MB): peak = 1639.312 ; gain = 641.844
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:01 ; elapsed = 00:00:53 . Memory (MB): peak = 1546.988 ; gain = 657.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -512,18 +514,18 @@ Report Cell Usage:
 |36    |OBUF               |    26|
 +------+-------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:01 ; elapsed = 00:00:51 . Memory (MB): peak = 1639.312 ; gain = 641.844
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:01 ; elapsed = 00:00:53 . Memory (MB): peak = 1546.988 ; gain = 657.219
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:47 . Memory (MB): peak = 1639.312 ; gain = 553.961
-Synthesis Optimization Complete : Time (s): cpu = 00:00:01 ; elapsed = 00:00:51 . Memory (MB): peak = 1639.312 ; gain = 641.844
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:49 . Memory (MB): peak = 1546.988 ; gain = 556.031
+Synthesis Optimization Complete : Time (s): cpu = 00:00:01 ; elapsed = 00:00:53 . Memory (MB): peak = 1546.988 ; gain = 657.219
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1639.312 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1546.988 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 58 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1639.312 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1546.988 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 32 instances were transformed.
   LD => LDCE: 32 instances
@@ -533,7 +535,7 @@ Synth Design complete | Checksum: f109c0a1
 INFO: [Common 17-83] Releasing license: Synthesis
 126 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:01 ; elapsed = 00:00:59 . Memory (MB): peak = 1639.312 ; gain = 1054.789
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1639.312 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'D:/Github/Rede_Perceptron_UART/Rede_Perceptron_UART.runs/synth_1/TOP.dcp' has been generated.
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 14 10:47:24 2023...
+synth_design: Time (s): cpu = 00:00:01 ; elapsed = 00:01:11 . Memory (MB): peak = 1546.988 ; gain = 1071.320
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1546.988 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Alain/GitHub/rede_perceptron_vhdl/Proxecto_VHDL/Rede_Perceptron_UART.runs/synth_1/TOP.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 16 13:45:08 2024...

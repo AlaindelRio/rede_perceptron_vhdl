@@ -45,8 +45,8 @@ YPred = rede(XTest);
 [C, order] = confusionmat(trueLabels, predictedLabels);
 
 heatmap(order, order, C);
-xlabel('Clase Verdadeira');
-ylabel('Clase Predita');
+xlabel('Clase Predita');
+ylabel('Clase Verdadeira');
 title('Matriz de Confusión');
 
 figure

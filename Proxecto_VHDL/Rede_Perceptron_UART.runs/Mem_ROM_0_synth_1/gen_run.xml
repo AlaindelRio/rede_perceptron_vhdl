@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="Mem_ROM_0_synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1699955074">
   <File Type="PA-TCL" Name="Mem_ROM_0.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Mem_ROM_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Mem_ROM_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="Mem_ROM_0.vds"/>
   <File Type="RDS-UTIL" Name="Mem_ROM_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Mem_ROM_0_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Mem_ROM_0.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Mem_ROM_0_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Mem_ROM_0_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Mem_ROM_0" RelGenDir="$PGENDIR/Mem_ROM_0">
     <File Path="$PSRCDIR/sources_1/ip/Mem_ROM_0/Mem_ROM_0.xci">
       <FileInfo>
@@ -68,9 +65,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
