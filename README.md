@@ -408,5 +408,5 @@ No caso da imaxe da dereita da Figura 6.2 estase visualizando a saída da neuron
 <div align="center">
     <img src="img/resultado_final_0.jpg" alt="Saída neurona 0" width="45%"/>
     <img src="img/resultado_final_1.jpg" alt="Saída neurona 2" width="45%" />
-<p align="center"><b>Figura 6.2: Resultados da impplementación física da imaxe 2</b></p>
+<p align="center"><b>Figura 6.2: Resultados da implementación física da imaxe 2</b></p>
 </div>
