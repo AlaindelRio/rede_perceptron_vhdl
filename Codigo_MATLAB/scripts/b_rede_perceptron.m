@@ -3,7 +3,7 @@
 % Ruta base relativa a la carpeta 'data'
 basePath = '../data/';
 
-% Cargar los archivos .mat desde la carpeta 'data'
+% Cargar os arquivos .mat dende a carpeta 'data'
 load(fullfile(basePath, 'XTrain.mat'));
 load(fullfile(basePath, 'YTrain.mat'));
 load(fullfile(basePath, 'XTest.mat'));
@@ -15,6 +15,7 @@ load(fullfile(basePath, 'YTest.mat'));
 % Normalización dos datos
 XTrain_norm = XTrain/255;
 XTest_norm  = XTest/255;
+
 %% Sección 2. Adestramento dos Perceptrons
 rede = perceptron;
 rede.trainParam.epochs = 10;
@@ -22,7 +23,11 @@ rede = train(rede, XTrain, YTrain);
 
 rede_n = perceptron;
 rede_n.trainParam.epochs = 10;
-rede_n = train(rede, XTrain_norm, YTrain);
+rede_n = train(rede_n, XTrain_norm, YTrain);
+
+save(fullfile(basePath, 'rede'), 'rede');
+save(fullfile(basePath, 'rede_n'), 'rede_n');
+
 %% Sección 3. Prediccións do modelo entrenado
 % Modelo adestrado con datos sin normalizados
 [accuracy_rede] = calc_accuracy(XTest,YTest,rede);   
@@ -32,21 +37,22 @@ rede_n = train(rede, XTrain_norm, YTrain);
 
 fprintf('Precisión do modelo sen normalizar: %.2f%%\n', accuracy_rede);
 fprintf('Precisión do modelo normalizado: %.2f%%\n', accuracy_rede_n);
+
 %% Sección 4. Obtencion da Matriz de confusión e número de mostras por etiqueta
-YPred = rede_n(XTest);
+YPred = rede(XTest);
 [~, predictedLabels] = max(YPred);
 [~, trueLabels] = max(YTest);
 [C, order] = confusionmat(trueLabels, predictedLabels);
 
 heatmap(order, order, C);
-xlabel('Clase Verdadera');
-ylabel('Clase Predicha');
+xlabel('Clase Verdadeira');
+ylabel('Clase Predita');
 title('Matriz de Confusión');
 
 figure
 histogram(trueLabels);
 xlabel('Etiqueta');
-ylabel('Número de muestras');
+ylabel('Número de mostras');
 title('Distribución de etiquetas');
 
 %% Sección 5. Cálculo dos pesos das conexións
@@ -78,7 +84,7 @@ pesos_bias = sfi(pesos_bias,n_pesos,0);
 dim = size(pesos_rede,1) + 1; % Dimensión dos pesos máis o valor de bias
 
 for numero = 1:10
-    % Pra seleccionar o 0 hai que introducir o valor 10
+    % Para seleccionar o 0 hai que introducir o valor 10
     % Crear un nuevo arquivo .COE pra escribir.
     if numero == 10
         filePath = fullfile(basePath, 'Memw0.COE');

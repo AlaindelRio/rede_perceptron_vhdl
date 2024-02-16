@@ -1,6 +1,6 @@
 %% Formatear Data Set
 % Rutas relativas aos arquivos .gz na carpeta 'data'
-basePath = '../data/'; % Cambia según a estructura exacta das túas carpetas
+basePath = '..\data\'; % Cambia según a estructura exacta das túas carpetas
 
 filenameImagesTrain = fullfile(basePath, 'train-images-idx3-ubyte.gz');
 filenameLabelsTrain = fullfile(basePath, 'train-labels-idx1-ubyte.gz');

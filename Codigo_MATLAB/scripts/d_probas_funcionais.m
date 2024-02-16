@@ -1,5 +1,5 @@
 %% Sección 1. Xeneración dos valores de cada pixel para proba funcional
-dim = size(PesosRede,1) + 1; % Dimensión dos pesos máis o valor de bias
+dim = size(pesos_rede,1) + 1; % Dimensión dos pesos máis o valor de bias
 imaxe = 1;  % Seleccion da mostra para a proba
 XTest_X = XTest(:,imaxe);
 
@@ -31,9 +31,9 @@ imaxe = 2;      % de 1 a 10000
 % Na fila 2 almacea os valores do sumatorio
 for i = 1:785
     if i == 785
-        Mult_suma(1,i) = (1*fi2double(PesosBias(numero,1)));
+        Mult_suma(1,i) = (1*fi2double(pesos_bias(numero,1)));
     else
-        Mult_suma(1,i) = (XTest(i,imaxe)*fi2double(PesosRede(i,numero)));
+        Mult_suma(1,i) = (XTest(i,imaxe)*fi2double(pesos_rede(i,numero)));
     end
     if i == 1
         Mult_suma(2,i) = Mult_suma(1,i);

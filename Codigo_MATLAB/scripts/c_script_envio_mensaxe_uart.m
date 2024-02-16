@@ -1,6 +1,6 @@
 %% Permite recibir datos na FPGA enviados dende Matlab
 % Configuración do porto serie, en función do COM establecido polo driver
-Port = 'COM4'; 
+Port = 'COM4'; % Modificar o porto según sexa necesario
 FPGA_COM = serial(Port,'BaudRate',115200); % Fixamos 115200 baudios
 set(FPGA_COM,'StopBits',1); % 1 bit de STOP e non hai bit de paridade
 fopen(FPGA_COM);
